@@ -18,12 +18,3 @@ int *swap_sort(int *list, int n)
     return list;
 }
 
-int main(){
-    int s[5] = {5, 4, 3, 2, 1};
-    swap_sort(s, 5);
-    for (int i=0; i<5; i++){
-        printf("%d ", s[i]);
-    }
-
-    return 0;
-}
