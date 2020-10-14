@@ -5,18 +5,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
-#include <criterion/criterion.h>
 
-int factor(int k){
-    int res = 1;
-    for (int i = 1; i <= k; i++){
-        res = res * i;
-    }
-    return res;
-}
-
-
-bool search_throw_array(const int *arr){
+bool check_for_similarity(const int *arr){ // create function to check array in task for similar elements
     int flag = 0;
     for (int i=0; i<sizeof(arr); i++) {
         if (((flag == 1) && arr[i] < 0) || ((flag == -1) && arr[i] > 0)){
@@ -32,7 +22,7 @@ bool search_throw_array(const int *arr){
     return true;
 }
 
-int summ_of_array(const int *spis, int start, int end){
+int summ_of_array(const int *spis, int start, int end){ // function to get amount of elements in the part of array
     int summ = 0;
     for (int i = start; i < end; i++){
         summ = summ + spis[i];
@@ -41,8 +31,8 @@ int summ_of_array(const int *spis, int start, int end){
 }
 
 int maxSequence(const int * array, int n) {
-    int res = -5;
-    if (search_throw_array(array)) {
+    int res = -100000000;
+    if (check_for_similarity(array)) {
         if (array[0] > 0) {
             return summ_of_array(array, 0, n);
         } else {
@@ -50,8 +40,8 @@ int maxSequence(const int * array, int n) {
         }
 
     }else {
-        for (int z = 0; z < n; z++) {
-            for (int j=0; j<n; j++){
+        for (int z = 0; z <= n; z++) {
+            for (int j=0; j<=n; j++){
                 if (summ_of_array(array, z, j) > res)
                     res = summ_of_array(array, z, j);
             }
@@ -61,7 +51,7 @@ int maxSequence(const int * array, int n) {
 }
 
 int main() {
-    int k[] = {-1, 1, 3, -4, 1};
-    printf("%d", maxSequence(k, 5));
+    int k[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    printf("%d", maxSequence(k, 9));
     return 0;
 }
