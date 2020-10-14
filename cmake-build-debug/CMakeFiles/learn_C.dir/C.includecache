@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Oleksiy/CLionProjects/learn_C/max_subarray_sum.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+stdbool.h
+-
+
