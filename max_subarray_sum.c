@@ -50,8 +50,3 @@ int maxSequence(const int * array, int n) {
     return res;
 }
 
-int main() {
-    int k[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    printf("%d", maxSequence(k, 9));
-    return 0;
-}
