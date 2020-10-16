@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Oleksiy/CLionProjects/learn_C/max_subarray_sum.c
+/Users/Oleksiy/CLionProjects/learn_C/ft__print__reverse__alphabet.c
 stdio.h
--
-stdlib.h
--
-math.h
--
-stdbool.h
 -
 

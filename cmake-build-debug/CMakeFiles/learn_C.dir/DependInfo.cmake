@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Oleksiy/CLionProjects/learn_C/max_subarray_sum.c" "/Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/max_subarray_sum.c.o"
+  "/Users/Oleksiy/CLionProjects/learn_C/ft__print__reverse__alphabet.c" "/Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

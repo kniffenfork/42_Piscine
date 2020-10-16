@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-max_subarray_sum.o: max_subarray_sum.c.o
+ft__print__reverse__alphabet.o: ft__print__reverse__alphabet.c.o
 
-.PHONY : max_subarray_sum.o
+.PHONY : ft__print__reverse__alphabet.o
 
 # target to build an object file
-max_subarray_sum.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/max_subarray_sum.c.o
-.PHONY : max_subarray_sum.c.o
+ft__print__reverse__alphabet.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.o
+.PHONY : ft__print__reverse__alphabet.c.o
 
-max_subarray_sum.i: max_subarray_sum.c.i
+ft__print__reverse__alphabet.i: ft__print__reverse__alphabet.c.i
 
-.PHONY : max_subarray_sum.i
+.PHONY : ft__print__reverse__alphabet.i
 
 # target to preprocess a source file
-max_subarray_sum.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/max_subarray_sum.c.i
-.PHONY : max_subarray_sum.c.i
+ft__print__reverse__alphabet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.i
+.PHONY : ft__print__reverse__alphabet.c.i
 
-max_subarray_sum.s: max_subarray_sum.c.s
+ft__print__reverse__alphabet.s: ft__print__reverse__alphabet.c.s
 
-.PHONY : max_subarray_sum.s
+.PHONY : ft__print__reverse__alphabet.s
 
 # target to generate assembly for a file
-max_subarray_sum.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/max_subarray_sum.c.s
-.PHONY : max_subarray_sum.c.s
+ft__print__reverse__alphabet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.s
+.PHONY : ft__print__reverse__alphabet.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... max_subarray_sum.o"
-	@echo "... max_subarray_sum.i"
-	@echo "... max_subarray_sum.s"
+	@echo "... ft__print__reverse__alphabet.o"
+	@echo "... ft__print__reverse__alphabet.i"
+	@echo "... ft__print__reverse__alphabet.s"
 .PHONY : help
 
 
