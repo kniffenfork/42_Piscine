@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/ft__print__numbers.c.o"
+  "CMakeFiles/learn_C.dir/ft_isnegative.c.o"
   "learn_C"
   "learn_C.pdb"
 )

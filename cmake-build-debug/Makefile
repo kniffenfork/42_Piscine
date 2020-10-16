@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-ft__print__numbers.o: ft__print__numbers.c.o
+ft_isnegative.o: ft_isnegative.c.o
 
-.PHONY : ft__print__numbers.o
+.PHONY : ft_isnegative.o
 
 # target to build an object file
-ft__print__numbers.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.o
-.PHONY : ft__print__numbers.c.o
+ft_isnegative.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.o
+.PHONY : ft_isnegative.c.o
 
-ft__print__numbers.i: ft__print__numbers.c.i
+ft_isnegative.i: ft_isnegative.c.i
 
-.PHONY : ft__print__numbers.i
+.PHONY : ft_isnegative.i
 
 # target to preprocess a source file
-ft__print__numbers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.i
-.PHONY : ft__print__numbers.c.i
+ft_isnegative.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.i
+.PHONY : ft_isnegative.c.i
 
-ft__print__numbers.s: ft__print__numbers.c.s
+ft_isnegative.s: ft_isnegative.c.s
 
-.PHONY : ft__print__numbers.s
+.PHONY : ft_isnegative.s
 
 # target to generate assembly for a file
-ft__print__numbers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.s
-.PHONY : ft__print__numbers.c.s
+ft_isnegative.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.s
+.PHONY : ft_isnegative.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... ft__print__numbers.o"
-	@echo "... ft__print__numbers.i"
-	@echo "... ft__print__numbers.s"
+	@echo "... ft_isnegative.o"
+	@echo "... ft_isnegative.i"
+	@echo "... ft_isnegative.s"
 .PHONY : help
 
 

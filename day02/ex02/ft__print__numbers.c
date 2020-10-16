@@ -6,3 +6,4 @@ void ft_print_numbers(void){
         putchar(digits[i]);
     }
 }
+,
