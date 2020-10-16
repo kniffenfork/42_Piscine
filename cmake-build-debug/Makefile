@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-ex02/ft__print__reverse__alphabet.o: ex02/ft__print__reverse__alphabet.c.o
+ft__print__numbers.o: ft__print__numbers.c.o
 
-.PHONY : ex02/ft__print__reverse__alphabet.o
+.PHONY : ft__print__numbers.o
 
 # target to build an object file
-ex02/ft__print__reverse__alphabet.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.o
-.PHONY : ex02/ft__print__reverse__alphabet.c.o
+ft__print__numbers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.o
+.PHONY : ft__print__numbers.c.o
 
-ex02/ft__print__reverse__alphabet.i: ex02/ft__print__reverse__alphabet.c.i
+ft__print__numbers.i: ft__print__numbers.c.i
 
-.PHONY : ex02/ft__print__reverse__alphabet.i
+.PHONY : ft__print__numbers.i
 
 # target to preprocess a source file
-ex02/ft__print__reverse__alphabet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.i
-.PHONY : ex02/ft__print__reverse__alphabet.c.i
+ft__print__numbers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.i
+.PHONY : ft__print__numbers.c.i
 
-ex02/ft__print__reverse__alphabet.s: ex02/ft__print__reverse__alphabet.c.s
+ft__print__numbers.s: ft__print__numbers.c.s
 
-.PHONY : ex02/ft__print__reverse__alphabet.s
+.PHONY : ft__print__numbers.s
 
 # target to generate assembly for a file
-ex02/ft__print__reverse__alphabet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.s
-.PHONY : ex02/ft__print__reverse__alphabet.c.s
+ft__print__numbers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__numbers.c.s
+.PHONY : ft__print__numbers.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... ex02/ft__print__reverse__alphabet.o"
-	@echo "... ex02/ft__print__reverse__alphabet.i"
-	@echo "... ex02/ft__print__reverse__alphabet.s"
+	@echo "... ft__print__numbers.o"
+	@echo "... ft__print__numbers.i"
+	@echo "... ft__print__numbers.s"
 .PHONY : help
 
 

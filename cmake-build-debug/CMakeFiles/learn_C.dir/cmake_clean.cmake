@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.o"
+  "CMakeFiles/learn_C.dir/ft__print__numbers.c.o"
   "learn_C"
   "learn_C.pdb"
 )
