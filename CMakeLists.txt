@@ -3,5 +3,5 @@ project(learn_C C)
 
 set(CMAKE_C_STANDARD 99)
 
+add_executable(learn_C ex02/ft__print__reverse__alphabet.c)
 
-add_executable(learn_C max_subarray_sum.c)
