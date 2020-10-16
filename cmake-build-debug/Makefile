@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-ft__print__reverse__alphabet.o: ft__print__reverse__alphabet.c.o
+ex02/ft__print__reverse__alphabet.o: ex02/ft__print__reverse__alphabet.c.o
 
-.PHONY : ft__print__reverse__alphabet.o
+.PHONY : ex02/ft__print__reverse__alphabet.o
 
 # target to build an object file
-ft__print__reverse__alphabet.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.o
-.PHONY : ft__print__reverse__alphabet.c.o
+ex02/ft__print__reverse__alphabet.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.o
+.PHONY : ex02/ft__print__reverse__alphabet.c.o
 
-ft__print__reverse__alphabet.i: ft__print__reverse__alphabet.c.i
+ex02/ft__print__reverse__alphabet.i: ex02/ft__print__reverse__alphabet.c.i
 
-.PHONY : ft__print__reverse__alphabet.i
+.PHONY : ex02/ft__print__reverse__alphabet.i
 
 # target to preprocess a source file
-ft__print__reverse__alphabet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.i
-.PHONY : ft__print__reverse__alphabet.c.i
+ex02/ft__print__reverse__alphabet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.i
+.PHONY : ex02/ft__print__reverse__alphabet.c.i
 
-ft__print__reverse__alphabet.s: ft__print__reverse__alphabet.c.s
+ex02/ft__print__reverse__alphabet.s: ex02/ft__print__reverse__alphabet.c.s
 
-.PHONY : ft__print__reverse__alphabet.s
+.PHONY : ex02/ft__print__reverse__alphabet.s
 
 # target to generate assembly for a file
-ft__print__reverse__alphabet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft__print__reverse__alphabet.c.s
-.PHONY : ft__print__reverse__alphabet.c.s
+ex02/ft__print__reverse__alphabet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ex02/ft__print__reverse__alphabet.c.s
+.PHONY : ex02/ft__print__reverse__alphabet.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... ft__print__reverse__alphabet.o"
-	@echo "... ft__print__reverse__alphabet.i"
-	@echo "... ft__print__reverse__alphabet.s"
+	@echo "... ex02/ft__print__reverse__alphabet.o"
+	@echo "... ex02/ft__print__reverse__alphabet.i"
+	@echo "... ex02/ft__print__reverse__alphabet.s"
 .PHONY : help
 
 

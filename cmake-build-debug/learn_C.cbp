@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Oleksiy/CLionProjects/learn_C/ft__print__reverse__alphabet.c">
+		<Unit filename="/Users/Oleksiy/CLionProjects/learn_C/ex02/ft__print__reverse__alphabet.c">
 			<Option target="learn_C"/>
 		</Unit>
 		<Unit filename="/Users/Oleksiy/CLionProjects/learn_C/CMakeLists.txt">
