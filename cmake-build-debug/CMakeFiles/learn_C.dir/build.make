@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = "/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Oleksiy/CLionProjects/learn_C
+CMAKE_SOURCE_DIR = /Users/user/Desktop/Informatiks/learn_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/learn_C.dir/depend.make
@@ -77,30 +77,45 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/ft_isnegative.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/ft_isnegative.c.o: ../ft_isnegative.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/ft_isnegative.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/ft_isnegative.c.o   -c /Users/Oleksiy/CLionProjects/learn_C/ft_isnegative.c
+CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o: ../day02/ex03/ft_isnegative.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day02/ex03/ft_isnegative.c
 
-CMakeFiles/learn_C.dir/ft_isnegative.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/ft_isnegative.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Oleksiy/CLionProjects/learn_C/ft_isnegative.c > CMakeFiles/learn_C.dir/ft_isnegative.c.i
+CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day02/ex03/ft_isnegative.c > CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.i
 
-CMakeFiles/learn_C.dir/ft_isnegative.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/ft_isnegative.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Oleksiy/CLionProjects/learn_C/ft_isnegative.c -o CMakeFiles/learn_C.dir/ft_isnegative.c.s
+CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day02/ex03/ft_isnegative.c -o CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.s
+
+CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o: ../Codewars/dice_throw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o   -c /Users/user/Desktop/Informatiks/learn_C/Codewars/dice_throw.c
+
+CMakeFiles/learn_C.dir/Codewars/dice_throw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/Codewars/dice_throw.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/Codewars/dice_throw.c > CMakeFiles/learn_C.dir/Codewars/dice_throw.c.i
+
+CMakeFiles/learn_C.dir/Codewars/dice_throw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/Codewars/dice_throw.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/Codewars/dice_throw.c -o CMakeFiles/learn_C.dir/Codewars/dice_throw.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/ft_isnegative.c.o"
+"CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o" \
+"CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/ft_isnegative.c.o
+learn_C: CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o
+learn_C: CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
 learn_C: CMakeFiles/learn_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable learn_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable learn_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learn_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +128,6 @@ CMakeFiles/learn_C.dir/clean:
 .PHONY : CMakeFiles/learn_C.dir/clean
 
 CMakeFiles/learn_C.dir/depend:
-	cd /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Oleksiy/CLionProjects/learn_C /Users/Oleksiy/CLionProjects/learn_C /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/user/Desktop/Informatiks/learn_C /Users/user/Desktop/Informatiks/learn_C /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/learn_C.dir/depend
 

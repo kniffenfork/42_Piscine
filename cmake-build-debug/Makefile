@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = "/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Oleksiy/CLionProjects/learn_C
+CMAKE_SOURCE_DIR = /Users/user/Desktop/Informatiks/learn_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/Oleksiy/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/user/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Oleksiy/CLionProjects/learn_C/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,32 +143,59 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-ft_isnegative.o: ft_isnegative.c.o
+Codewars/dice_throw.o: Codewars/dice_throw.c.o
 
-.PHONY : ft_isnegative.o
+.PHONY : Codewars/dice_throw.o
 
 # target to build an object file
-ft_isnegative.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.o
-.PHONY : ft_isnegative.c.o
+Codewars/dice_throw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o
+.PHONY : Codewars/dice_throw.c.o
 
-ft_isnegative.i: ft_isnegative.c.i
+Codewars/dice_throw.i: Codewars/dice_throw.c.i
 
-.PHONY : ft_isnegative.i
+.PHONY : Codewars/dice_throw.i
 
 # target to preprocess a source file
-ft_isnegative.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.i
-.PHONY : ft_isnegative.c.i
+Codewars/dice_throw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.i
+.PHONY : Codewars/dice_throw.c.i
 
-ft_isnegative.s: ft_isnegative.c.s
+Codewars/dice_throw.s: Codewars/dice_throw.c.s
 
-.PHONY : ft_isnegative.s
+.PHONY : Codewars/dice_throw.s
 
 # target to generate assembly for a file
-ft_isnegative.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/ft_isnegative.c.s
-.PHONY : ft_isnegative.c.s
+Codewars/dice_throw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.s
+.PHONY : Codewars/dice_throw.c.s
+
+day02/ex03/ft_isnegative.o: day02/ex03/ft_isnegative.c.o
+
+.PHONY : day02/ex03/ft_isnegative.o
+
+# target to build an object file
+day02/ex03/ft_isnegative.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o
+.PHONY : day02/ex03/ft_isnegative.c.o
+
+day02/ex03/ft_isnegative.i: day02/ex03/ft_isnegative.c.i
+
+.PHONY : day02/ex03/ft_isnegative.i
+
+# target to preprocess a source file
+day02/ex03/ft_isnegative.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.i
+.PHONY : day02/ex03/ft_isnegative.c.i
+
+day02/ex03/ft_isnegative.s: day02/ex03/ft_isnegative.c.s
+
+.PHONY : day02/ex03/ft_isnegative.s
+
+# target to generate assembly for a file
+day02/ex03/ft_isnegative.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.s
+.PHONY : day02/ex03/ft_isnegative.c.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... ft_isnegative.o"
-	@echo "... ft_isnegative.i"
-	@echo "... ft_isnegative.s"
+	@echo "... Codewars/dice_throw.o"
+	@echo "... Codewars/dice_throw.i"
+	@echo "... Codewars/dice_throw.s"
+	@echo "... day02/ex03/ft_isnegative.o"
+	@echo "... day02/ex03/ft_isnegative.i"
+	@echo "... day02/ex03/ft_isnegative.s"
 .PHONY : help
 
 
