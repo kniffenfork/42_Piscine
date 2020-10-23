@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/user/Desktop/Informatiks/learn_C/Codewars/dice_throw.c
+/Users/user/Desktop/Informatiks/learn_C/day02/ex04/ft__print__comb.c
 stdio.h
+-
+stdbool.h
+-
+zconf.h
 -
 

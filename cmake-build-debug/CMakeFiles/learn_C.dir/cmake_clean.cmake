@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o"
-  "CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o"
+  "CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.o"
   "learn_C"
   "learn_C.pdb"
 )

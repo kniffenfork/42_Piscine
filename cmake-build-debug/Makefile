@@ -143,59 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-Codewars/dice_throw.o: Codewars/dice_throw.c.o
+day02/ex04/ft__print__comb.o: day02/ex04/ft__print__comb.c.o
 
-.PHONY : Codewars/dice_throw.o
-
-# target to build an object file
-Codewars/dice_throw.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.o
-.PHONY : Codewars/dice_throw.c.o
-
-Codewars/dice_throw.i: Codewars/dice_throw.c.i
-
-.PHONY : Codewars/dice_throw.i
-
-# target to preprocess a source file
-Codewars/dice_throw.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.i
-.PHONY : Codewars/dice_throw.c.i
-
-Codewars/dice_throw.s: Codewars/dice_throw.c.s
-
-.PHONY : Codewars/dice_throw.s
-
-# target to generate assembly for a file
-Codewars/dice_throw.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/Codewars/dice_throw.c.s
-.PHONY : Codewars/dice_throw.c.s
-
-day02/ex03/ft_isnegative.o: day02/ex03/ft_isnegative.c.o
-
-.PHONY : day02/ex03/ft_isnegative.o
+.PHONY : day02/ex04/ft__print__comb.o
 
 # target to build an object file
-day02/ex03/ft_isnegative.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.o
-.PHONY : day02/ex03/ft_isnegative.c.o
+day02/ex04/ft__print__comb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.o
+.PHONY : day02/ex04/ft__print__comb.c.o
 
-day02/ex03/ft_isnegative.i: day02/ex03/ft_isnegative.c.i
+day02/ex04/ft__print__comb.i: day02/ex04/ft__print__comb.c.i
 
-.PHONY : day02/ex03/ft_isnegative.i
+.PHONY : day02/ex04/ft__print__comb.i
 
 # target to preprocess a source file
-day02/ex03/ft_isnegative.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.i
-.PHONY : day02/ex03/ft_isnegative.c.i
+day02/ex04/ft__print__comb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.i
+.PHONY : day02/ex04/ft__print__comb.c.i
 
-day02/ex03/ft_isnegative.s: day02/ex03/ft_isnegative.c.s
+day02/ex04/ft__print__comb.s: day02/ex04/ft__print__comb.c.s
 
-.PHONY : day02/ex03/ft_isnegative.s
+.PHONY : day02/ex04/ft__print__comb.s
 
 # target to generate assembly for a file
-day02/ex03/ft_isnegative.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex03/ft_isnegative.c.s
-.PHONY : day02/ex03/ft_isnegative.c.s
+day02/ex04/ft__print__comb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.s
+.PHONY : day02/ex04/ft__print__comb.c.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... Codewars/dice_throw.o"
-	@echo "... Codewars/dice_throw.i"
-	@echo "... Codewars/dice_throw.s"
-	@echo "... day02/ex03/ft_isnegative.o"
-	@echo "... day02/ex03/ft_isnegative.i"
-	@echo "... day02/ex03/ft_isnegative.s"
+	@echo "... day02/ex04/ft__print__comb.o"
+	@echo "... day02/ex04/ft__print__comb.i"
+	@echo "... day02/ex04/ft__print__comb.s"
 .PHONY : help
 
 

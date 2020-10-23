@@ -76,10 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/Codewars/dice_throw.c">
-			<Option target="learn_C"/>
-		</Unit>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day02/ex03/ft_isnegative.c">
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day02/ex04/ft__print__comb.c">
 			<Option target="learn_C"/>
 		</Unit>
 		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/CMakeLists.txt">
