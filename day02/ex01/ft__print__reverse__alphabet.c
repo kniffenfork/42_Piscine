@@ -1,13 +1,16 @@
-//
-// Created by Алексей Фомин on 16.10.2020.
-//
+#include <zconf.h>
 
-#include <stdio.h>
+
+int ft_putchar(char c)
+{
+    write(1, &c, 1);
+    return (0);
+}
 
 void ft__print__alphabet(void) {
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
     for (int i = 26; alphabet[i] >= 0; i--) {
-        putchar(alphabet[i]);
+        ft_putchar(alphabet[i]);
     }
 }
 
