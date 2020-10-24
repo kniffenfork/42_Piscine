@@ -19,7 +19,7 @@ void str_to_chars(int c)
 
 void ft_print_comb()
 {
-    for (int i=0; i <= 1000; i++)
+    for (int i=0; i < 1000; i++)
     {
         int a1 = i/100, a2 = (i/10)%10, a3 = i%10;
         if ((a1 != a2 && a1 < a2) && (a2 != a3 && a2 < a3)){
