@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day02/ex04/ft__print__comb.o: day02/ex04/ft__print__comb.c.o
+day02/ex06/ft_putnbr.o: day02/ex06/ft_putnbr.c.o
 
-.PHONY : day02/ex04/ft__print__comb.o
+.PHONY : day02/ex06/ft_putnbr.o
 
 # target to build an object file
-day02/ex04/ft__print__comb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.o
-.PHONY : day02/ex04/ft__print__comb.c.o
+day02/ex06/ft_putnbr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex06/ft_putnbr.c.o
+.PHONY : day02/ex06/ft_putnbr.c.o
 
-day02/ex04/ft__print__comb.i: day02/ex04/ft__print__comb.c.i
+day02/ex06/ft_putnbr.i: day02/ex06/ft_putnbr.c.i
 
-.PHONY : day02/ex04/ft__print__comb.i
+.PHONY : day02/ex06/ft_putnbr.i
 
 # target to preprocess a source file
-day02/ex04/ft__print__comb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.i
-.PHONY : day02/ex04/ft__print__comb.c.i
+day02/ex06/ft_putnbr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex06/ft_putnbr.c.i
+.PHONY : day02/ex06/ft_putnbr.c.i
 
-day02/ex04/ft__print__comb.s: day02/ex04/ft__print__comb.c.s
+day02/ex06/ft_putnbr.s: day02/ex06/ft_putnbr.c.s
 
-.PHONY : day02/ex04/ft__print__comb.s
+.PHONY : day02/ex06/ft_putnbr.s
 
 # target to generate assembly for a file
-day02/ex04/ft__print__comb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex04/ft__print__comb.c.s
-.PHONY : day02/ex04/ft__print__comb.c.s
+day02/ex06/ft_putnbr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex06/ft_putnbr.c.s
+.PHONY : day02/ex06/ft_putnbr.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day02/ex04/ft__print__comb.o"
-	@echo "... day02/ex04/ft__print__comb.i"
-	@echo "... day02/ex04/ft__print__comb.s"
+	@echo "... day02/ex06/ft_putnbr.o"
+	@echo "... day02/ex06/ft_putnbr.i"
+	@echo "... day02/ex06/ft_putnbr.s"
 .PHONY : help
 
 
