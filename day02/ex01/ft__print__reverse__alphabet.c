@@ -7,10 +7,9 @@ int ft_putchar(char c)
     return (0);
 }
 
-void ft__print__alphabet(void) {
+void ft__print__alphabet(void)
+{
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    for (int i = 26; alphabet[i] >= 0; i--) {
+    for (int i = 26; alphabet[i] >= 0; i--)
         ft_putchar(alphabet[i]);
-    }
 }
-

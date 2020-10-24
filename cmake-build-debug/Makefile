@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day03/ex09/ft_sort_integer_table.o: day03/ex09/ft_sort_integer_table.c.o
+day02/ex07/ft_print_combn.o: day02/ex07/ft_print_combn.c.o
 
-.PHONY : day03/ex09/ft_sort_integer_table.o
+.PHONY : day02/ex07/ft_print_combn.o
 
 # target to build an object file
-day03/ex09/ft_sort_integer_table.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day03/ex09/ft_sort_integer_table.c.o
-.PHONY : day03/ex09/ft_sort_integer_table.c.o
+day02/ex07/ft_print_combn.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o
+.PHONY : day02/ex07/ft_print_combn.c.o
 
-day03/ex09/ft_sort_integer_table.i: day03/ex09/ft_sort_integer_table.c.i
+day02/ex07/ft_print_combn.i: day02/ex07/ft_print_combn.c.i
 
-.PHONY : day03/ex09/ft_sort_integer_table.i
+.PHONY : day02/ex07/ft_print_combn.i
 
 # target to preprocess a source file
-day03/ex09/ft_sort_integer_table.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day03/ex09/ft_sort_integer_table.c.i
-.PHONY : day03/ex09/ft_sort_integer_table.c.i
+day02/ex07/ft_print_combn.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.i
+.PHONY : day02/ex07/ft_print_combn.c.i
 
-day03/ex09/ft_sort_integer_table.s: day03/ex09/ft_sort_integer_table.c.s
+day02/ex07/ft_print_combn.s: day02/ex07/ft_print_combn.c.s
 
-.PHONY : day03/ex09/ft_sort_integer_table.s
+.PHONY : day02/ex07/ft_print_combn.s
 
 # target to generate assembly for a file
-day03/ex09/ft_sort_integer_table.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day03/ex09/ft_sort_integer_table.c.s
-.PHONY : day03/ex09/ft_sort_integer_table.c.s
+day02/ex07/ft_print_combn.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.s
+.PHONY : day02/ex07/ft_print_combn.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day03/ex09/ft_sort_integer_table.o"
-	@echo "... day03/ex09/ft_sort_integer_table.i"
-	@echo "... day03/ex09/ft_sort_integer_table.s"
+	@echo "... day02/ex07/ft_print_combn.o"
+	@echo "... day02/ex07/ft_print_combn.i"
+	@echo "... day02/ex07/ft_print_combn.s"
 .PHONY : help
 
 

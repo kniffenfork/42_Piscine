@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/user/Desktop/Informatiks/learn_C/day03/ex09/ft_sort_integer_table.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day03/ex09/ft_sort_integer_table.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/day02/ex07/ft_print_combn.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
