@@ -3,5 +3,5 @@ project(learn_C C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(learn_C day02/ex07/ft_print_combn.c)
+add_executable(learn_C day03/ex09/ft_sort_integer_table.c)
 
