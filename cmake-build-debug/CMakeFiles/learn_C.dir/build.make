@@ -77,30 +77,45 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o: ../day02/ex07/ft_print_combn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day02/ex07/ft_print_combn.c
+CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o: ../day04/ex07/ft_find_next_prime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day04/ex07/ft_find_next_prime.c
 
-CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day02/ex07/ft_print_combn.c > CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.i
+CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day04/ex07/ft_find_next_prime.c > CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.i
 
-CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day02/ex07/ft_print_combn.c -o CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.s
+CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day04/ex07/ft_find_next_prime.c -o CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.s
+
+CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o: ../day04/ex08/ft_eight_queens_puzzle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day04/ex08/ft_eight_queens_puzzle.c
+
+CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day04/ex08/ft_eight_queens_puzzle.c > CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.i
+
+CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day04/ex08/ft_eight_queens_puzzle.c -o CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o"
+"CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o" \
+"CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o
+learn_C: CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o
+learn_C: CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
 learn_C: CMakeFiles/learn_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable learn_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable learn_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learn_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

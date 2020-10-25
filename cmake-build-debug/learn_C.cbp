@@ -76,7 +76,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day02/ex07/ft_print_combn.c">
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day04/ex07/ft_find_next_prime.c">
+			<Option target="learn_C"/>
+		</Unit>
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day04/ex08/ft_eight_queens_puzzle.c">
 			<Option target="learn_C"/>
 		</Unit>
 		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/CMakeLists.txt">

@@ -143,32 +143,59 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day02/ex07/ft_print_combn.o: day02/ex07/ft_print_combn.c.o
+day04/ex07/ft_find_next_prime.o: day04/ex07/ft_find_next_prime.c.o
 
-.PHONY : day02/ex07/ft_print_combn.o
+.PHONY : day04/ex07/ft_find_next_prime.o
 
 # target to build an object file
-day02/ex07/ft_print_combn.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.o
-.PHONY : day02/ex07/ft_print_combn.c.o
+day04/ex07/ft_find_next_prime.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o
+.PHONY : day04/ex07/ft_find_next_prime.c.o
 
-day02/ex07/ft_print_combn.i: day02/ex07/ft_print_combn.c.i
+day04/ex07/ft_find_next_prime.i: day04/ex07/ft_find_next_prime.c.i
 
-.PHONY : day02/ex07/ft_print_combn.i
+.PHONY : day04/ex07/ft_find_next_prime.i
 
 # target to preprocess a source file
-day02/ex07/ft_print_combn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.i
-.PHONY : day02/ex07/ft_print_combn.c.i
+day04/ex07/ft_find_next_prime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.i
+.PHONY : day04/ex07/ft_find_next_prime.c.i
 
-day02/ex07/ft_print_combn.s: day02/ex07/ft_print_combn.c.s
+day04/ex07/ft_find_next_prime.s: day04/ex07/ft_find_next_prime.c.s
 
-.PHONY : day02/ex07/ft_print_combn.s
+.PHONY : day04/ex07/ft_find_next_prime.s
 
 # target to generate assembly for a file
-day02/ex07/ft_print_combn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day02/ex07/ft_print_combn.c.s
-.PHONY : day02/ex07/ft_print_combn.c.s
+day04/ex07/ft_find_next_prime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.s
+.PHONY : day04/ex07/ft_find_next_prime.c.s
+
+day04/ex08/ft_eight_queens_puzzle.o: day04/ex08/ft_eight_queens_puzzle.c.o
+
+.PHONY : day04/ex08/ft_eight_queens_puzzle.o
+
+# target to build an object file
+day04/ex08/ft_eight_queens_puzzle.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o
+.PHONY : day04/ex08/ft_eight_queens_puzzle.c.o
+
+day04/ex08/ft_eight_queens_puzzle.i: day04/ex08/ft_eight_queens_puzzle.c.i
+
+.PHONY : day04/ex08/ft_eight_queens_puzzle.i
+
+# target to preprocess a source file
+day04/ex08/ft_eight_queens_puzzle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.i
+.PHONY : day04/ex08/ft_eight_queens_puzzle.c.i
+
+day04/ex08/ft_eight_queens_puzzle.s: day04/ex08/ft_eight_queens_puzzle.c.s
+
+.PHONY : day04/ex08/ft_eight_queens_puzzle.s
+
+# target to generate assembly for a file
+day04/ex08/ft_eight_queens_puzzle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.s
+.PHONY : day04/ex08/ft_eight_queens_puzzle.c.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day02/ex07/ft_print_combn.o"
-	@echo "... day02/ex07/ft_print_combn.i"
-	@echo "... day02/ex07/ft_print_combn.s"
+	@echo "... day04/ex07/ft_find_next_prime.o"
+	@echo "... day04/ex07/ft_find_next_prime.i"
+	@echo "... day04/ex07/ft_find_next_prime.s"
+	@echo "... day04/ex08/ft_eight_queens_puzzle.o"
+	@echo "... day04/ex08/ft_eight_queens_puzzle.i"
+	@echo "... day04/ex08/ft_eight_queens_puzzle.s"
 .PHONY : help
 
 
