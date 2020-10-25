@@ -13,9 +13,17 @@
  5 3 5 5 5
  */
 
-int score(const int dice[5]){
-    int flag_1 = 0, flag_2 = 0, flag_3 = 0, flag_4 = 0, flag_5 = 0, flag_6 = 0, res = 0;
-    for (int i = 0; i<5; i++){
+int score(const int dice[5])
+{
+    int flag_1 = 0;
+    int flag_2 = 0;
+    int flag_3 = 0;
+    int flag_4 = 0;
+    int flag_5 = 0;
+    int flag_6 = 0;
+    int res = 0;
+    for (int i = 0; i < 5; i++)
+    {
         if (dice[i] == 1)
             flag_1++;
         else if (dice[i] == 2)
@@ -46,7 +54,8 @@ int score(const int dice[5]){
     if ((flag_5 < 3) && flag_5 > 0)
         res = res + 50;
 
-    for (int i=0; i<5; i++){
+    for (int i = 0; i < 5; i++)
+    {
         if (i < 4)
             printf("%d ", dice[i]);
         else
@@ -55,7 +64,8 @@ int score(const int dice[5]){
     return res;
 }
 
-int main(){
+int main()
+{
     const int dice[5] = {1, 1, 5, 5, 1};
     printf("%d", score(dice));
     return 0;
