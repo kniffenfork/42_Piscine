@@ -143,59 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day04/ex07/ft_find_next_prime.o: day04/ex07/ft_find_next_prime.c.o
+day05/ex20/ft_putnbr_base.o: day05/ex20/ft_putnbr_base.c.o
 
-.PHONY : day04/ex07/ft_find_next_prime.o
-
-# target to build an object file
-day04/ex07/ft_find_next_prime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o
-.PHONY : day04/ex07/ft_find_next_prime.c.o
-
-day04/ex07/ft_find_next_prime.i: day04/ex07/ft_find_next_prime.c.i
-
-.PHONY : day04/ex07/ft_find_next_prime.i
-
-# target to preprocess a source file
-day04/ex07/ft_find_next_prime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.i
-.PHONY : day04/ex07/ft_find_next_prime.c.i
-
-day04/ex07/ft_find_next_prime.s: day04/ex07/ft_find_next_prime.c.s
-
-.PHONY : day04/ex07/ft_find_next_prime.s
-
-# target to generate assembly for a file
-day04/ex07/ft_find_next_prime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.s
-.PHONY : day04/ex07/ft_find_next_prime.c.s
-
-day04/ex08/ft_eight_queens_puzzle.o: day04/ex08/ft_eight_queens_puzzle.c.o
-
-.PHONY : day04/ex08/ft_eight_queens_puzzle.o
+.PHONY : day05/ex20/ft_putnbr_base.o
 
 # target to build an object file
-day04/ex08/ft_eight_queens_puzzle.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o
-.PHONY : day04/ex08/ft_eight_queens_puzzle.c.o
+day05/ex20/ft_putnbr_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o
+.PHONY : day05/ex20/ft_putnbr_base.c.o
 
-day04/ex08/ft_eight_queens_puzzle.i: day04/ex08/ft_eight_queens_puzzle.c.i
+day05/ex20/ft_putnbr_base.i: day05/ex20/ft_putnbr_base.c.i
 
-.PHONY : day04/ex08/ft_eight_queens_puzzle.i
+.PHONY : day05/ex20/ft_putnbr_base.i
 
 # target to preprocess a source file
-day04/ex08/ft_eight_queens_puzzle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.i
-.PHONY : day04/ex08/ft_eight_queens_puzzle.c.i
+day05/ex20/ft_putnbr_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.i
+.PHONY : day05/ex20/ft_putnbr_base.c.i
 
-day04/ex08/ft_eight_queens_puzzle.s: day04/ex08/ft_eight_queens_puzzle.c.s
+day05/ex20/ft_putnbr_base.s: day05/ex20/ft_putnbr_base.c.s
 
-.PHONY : day04/ex08/ft_eight_queens_puzzle.s
+.PHONY : day05/ex20/ft_putnbr_base.s
 
 # target to generate assembly for a file
-day04/ex08/ft_eight_queens_puzzle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.s
-.PHONY : day04/ex08/ft_eight_queens_puzzle.c.s
+day05/ex20/ft_putnbr_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.s
+.PHONY : day05/ex20/ft_putnbr_base.c.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day04/ex07/ft_find_next_prime.o"
-	@echo "... day04/ex07/ft_find_next_prime.i"
-	@echo "... day04/ex07/ft_find_next_prime.s"
-	@echo "... day04/ex08/ft_eight_queens_puzzle.o"
-	@echo "... day04/ex08/ft_eight_queens_puzzle.i"
-	@echo "... day04/ex08/ft_eight_queens_puzzle.s"
+	@echo "... day05/ex20/ft_putnbr_base.o"
+	@echo "... day05/ex20/ft_putnbr_base.i"
+	@echo "... day05/ex20/ft_putnbr_base.s"
 .PHONY : help
 
 

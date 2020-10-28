@@ -11,10 +11,13 @@ int ft_sqrt(int nb)
         {
             for (int i = 0; i < 1000; i++)
             {
-                res = (res + nb / res) / 2;
+                res = (res + nb / res) >> 1;
             }
         }
     }
+    else
+        return -1;
+
     return res;
 }
 

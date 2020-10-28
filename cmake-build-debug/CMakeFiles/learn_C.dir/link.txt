@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o  -o learn_C 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o  -o learn_C 

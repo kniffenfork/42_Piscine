@@ -1,13 +1,3 @@
-int ft_strlen(const char *str)
-{
-    int res = 0;
-    for (int i = 0; str[i] != '\0'; i++)
-    {
-        res++;
-    }
-    return res;
-}
-
 int power(int n, int k)
 {
     int j = n;
@@ -19,30 +9,46 @@ int power(int n, int k)
     return n;
 }
 
+int strlength(char *str)
+{
+    int i = 0;
+    if (str[0] == '-')
+    {
+        i = 1;
+        while (str[i] >= '0' && str[i] <= '9')
+        {
+            i++;
+        }
+        return i-1;
+    }
+    else
+    {
+        while (str[i] >= '0' && str[i] <= '9')
+        {
+            i++;
+        }
+        return i;
+    }
+}
+
 int ft_atoi(char *str)
 {
     int res = 0;
-    int size = ft_strlen(str);
-    for (int i = 0; str[i] != '\0'; i++){
-        if (str[i] == '1')
-            res += 1 * power(10, size - i - 1);
-        else if (str[i] == '2')
-            res += 2 * power(10, size - i - 1);
-        else if (str[i] == '3')
-            res += 3 * power(10, size - i - 1);
-        else if (str[i] == '4')
-            res += 4 * power(10, size - i - 1);
-        else if (str[i] == '5')
-            res += 5 * power(10, size - i - 1);
-        else if (str[i] == '6')
-            res += 6 * power(10, size - i - 1);
-        else if (str[i] == '7')
-            res += 7 * power(10, size - i - 1);
-        else if (str[i] == '8')
-            res += 8 * power(10, size - i - 1);
-        else if (str[i] == '9')
-            res += 9 * power(10, size - i - 1);
+    if (str[0] != '-')
+    {
+        int i = 0;
+        while (str[i] >= '0' && str[i] <= '9')
+        {
+            res += (str[i] - '0') * power(10, strlength(str) - i - 1);
+            i++;
+        }
+        return res;
     }
-    return res;
+    else {
+        for (int i = 1; i < (1 + strlength(str)); i++)
+        {
+            res += (str[i] - '0') * power(10, strlength(str) - i);
+        }
+        return (-1) * res;
+    }
 }
-

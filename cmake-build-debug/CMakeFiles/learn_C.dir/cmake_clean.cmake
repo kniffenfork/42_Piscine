@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o"
-  "CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o"
+  "CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o"
   "learn_C"
   "learn_C.pdb"
 )

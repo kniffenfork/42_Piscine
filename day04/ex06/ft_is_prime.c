@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int ft_sqrt(int nb)
 {
     int res = nb;
@@ -31,3 +33,8 @@ int ft_is_prime(int nb)
     return 1;
 }
 
+
+int main()
+{
+    printf("%i", ft_sqrt(4));
+}

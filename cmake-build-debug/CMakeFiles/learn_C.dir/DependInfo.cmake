@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/user/Desktop/Informatiks/learn_C/day04/ex07/ft_find_next_prime.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day04/ex07/ft_find_next_prime.c.o"
-  "/Users/user/Desktop/Informatiks/learn_C/day04/ex08/ft_eight_queens_puzzle.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day04/ex08/ft_eight_queens_puzzle.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/day05/ex20/ft_putnbr_base.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
