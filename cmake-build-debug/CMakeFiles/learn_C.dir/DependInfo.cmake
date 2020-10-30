@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/user/Desktop/Informatiks/learn_C/day05/ex20/ft_putnbr_base.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/ft_putchar.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/main.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/rush00/ex00/main.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/rush04.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

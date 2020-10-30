@@ -143,32 +143,86 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day05/ex20/ft_putnbr_base.o: day05/ex20/ft_putnbr_base.c.o
+rush00/ex00/ft_putchar.o: rush00/ex00/ft_putchar.c.o
 
-.PHONY : day05/ex20/ft_putnbr_base.o
+.PHONY : rush00/ex00/ft_putchar.o
 
 # target to build an object file
-day05/ex20/ft_putnbr_base.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o
-.PHONY : day05/ex20/ft_putnbr_base.c.o
+rush00/ex00/ft_putchar.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o
+.PHONY : rush00/ex00/ft_putchar.c.o
 
-day05/ex20/ft_putnbr_base.i: day05/ex20/ft_putnbr_base.c.i
+rush00/ex00/ft_putchar.i: rush00/ex00/ft_putchar.c.i
 
-.PHONY : day05/ex20/ft_putnbr_base.i
+.PHONY : rush00/ex00/ft_putchar.i
 
 # target to preprocess a source file
-day05/ex20/ft_putnbr_base.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.i
-.PHONY : day05/ex20/ft_putnbr_base.c.i
+rush00/ex00/ft_putchar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.i
+.PHONY : rush00/ex00/ft_putchar.c.i
 
-day05/ex20/ft_putnbr_base.s: day05/ex20/ft_putnbr_base.c.s
+rush00/ex00/ft_putchar.s: rush00/ex00/ft_putchar.c.s
 
-.PHONY : day05/ex20/ft_putnbr_base.s
+.PHONY : rush00/ex00/ft_putchar.s
 
 # target to generate assembly for a file
-day05/ex20/ft_putnbr_base.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.s
-.PHONY : day05/ex20/ft_putnbr_base.c.s
+rush00/ex00/ft_putchar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.s
+.PHONY : rush00/ex00/ft_putchar.c.s
+
+rush00/ex00/main.o: rush00/ex00/main.c.o
+
+.PHONY : rush00/ex00/main.o
+
+# target to build an object file
+rush00/ex00/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.o
+.PHONY : rush00/ex00/main.c.o
+
+rush00/ex00/main.i: rush00/ex00/main.c.i
+
+.PHONY : rush00/ex00/main.i
+
+# target to preprocess a source file
+rush00/ex00/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.i
+.PHONY : rush00/ex00/main.c.i
+
+rush00/ex00/main.s: rush00/ex00/main.c.s
+
+.PHONY : rush00/ex00/main.s
+
+# target to generate assembly for a file
+rush00/ex00/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.s
+.PHONY : rush00/ex00/main.c.s
+
+rush00/ex00/rush04.o: rush00/ex00/rush04.c.o
+
+.PHONY : rush00/ex00/rush04.o
+
+# target to build an object file
+rush00/ex00/rush04.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o
+.PHONY : rush00/ex00/rush04.c.o
+
+rush00/ex00/rush04.i: rush00/ex00/rush04.c.i
+
+.PHONY : rush00/ex00/rush04.i
+
+# target to preprocess a source file
+rush00/ex00/rush04.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.i
+.PHONY : rush00/ex00/rush04.c.i
+
+rush00/ex00/rush04.s: rush00/ex00/rush04.c.s
+
+.PHONY : rush00/ex00/rush04.s
+
+# target to generate assembly for a file
+rush00/ex00/rush04.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.s
+.PHONY : rush00/ex00/rush04.c.s
 
 # Help Target
 help:
@@ -179,9 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day05/ex20/ft_putnbr_base.o"
-	@echo "... day05/ex20/ft_putnbr_base.i"
-	@echo "... day05/ex20/ft_putnbr_base.s"
+	@echo "... rush00/ex00/ft_putchar.o"
+	@echo "... rush00/ex00/ft_putchar.i"
+	@echo "... rush00/ex00/ft_putchar.s"
+	@echo "... rush00/ex00/main.o"
+	@echo "... rush00/ex00/main.i"
+	@echo "... rush00/ex00/main.s"
+	@echo "... rush00/ex00/rush04.o"
+	@echo "... rush00/ex00/rush04.i"
+	@echo "... rush00/ex00/rush04.s"
 .PHONY : help
 
 

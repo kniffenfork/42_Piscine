@@ -76,7 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day05/ex20/ft_putnbr_base.c">
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/ft_putchar.c">
+			<Option target="learn_C"/>
+		</Unit>
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/main.c">
+			<Option target="learn_C"/>
+		</Unit>
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/rush00/ex00/rush04.c">
 			<Option target="learn_C"/>
 		</Unit>
 		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/CMakeLists.txt">

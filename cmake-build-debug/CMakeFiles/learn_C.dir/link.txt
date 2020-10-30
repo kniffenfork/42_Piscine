@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/day05/ex20/ft_putnbr_base.c.o  -o learn_C 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/rush00/ex00/main.c.o CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o  -o learn_C 
