@@ -4,5 +4,6 @@ project(learn_C C)
 
 set(CMAKE_C_STANDARD 99)
 
+add_executable(learn_C day06/test.c day06/ex00/include/libft.h)
 
-add_executable(learn_C rush00/ex00/main.c rush00/ex00/ft_putchar.c rush00/ex00/rush04.c)
+target_link_libraries(learn_C /Users/user/Desktop/Informatiks/learn_C/day06/ex00/lib/libft.a)

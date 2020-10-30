@@ -94,12 +94,12 @@ clean: CMakeFiles/learn_C.dir/clean
 CMakeFiles/learn_C.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target learn_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target learn_C"
 .PHONY : CMakeFiles/learn_C.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/learn_C.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learn_C.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/learn_C.dir/rule

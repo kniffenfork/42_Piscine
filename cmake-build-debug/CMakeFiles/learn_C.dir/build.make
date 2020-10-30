@@ -77,60 +77,31 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/rush00/ex00/main.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/rush00/ex00/main.c.o: ../rush00/ex00/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/rush00/ex00/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/rush00/ex00/main.c.o   -c /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/main.c
+CMakeFiles/learn_C.dir/day06/test.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day06/test.c.o: ../day06/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day06/test.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day06/test.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day06/test.c
 
-CMakeFiles/learn_C.dir/rush00/ex00/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/rush00/ex00/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/main.c > CMakeFiles/learn_C.dir/rush00/ex00/main.c.i
+CMakeFiles/learn_C.dir/day06/test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day06/test.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day06/test.c > CMakeFiles/learn_C.dir/day06/test.c.i
 
-CMakeFiles/learn_C.dir/rush00/ex00/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/rush00/ex00/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/main.c -o CMakeFiles/learn_C.dir/rush00/ex00/main.c.s
-
-CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o: ../rush00/ex00/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o   -c /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/ft_putchar.c
-
-CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/ft_putchar.c > CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.i
-
-CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/ft_putchar.c -o CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.s
-
-CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o: ../rush00/ex00/rush04.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o   -c /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/rush04.c
-
-CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/rush04.c > CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.i
-
-CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/rush00/ex00/rush04.c -o CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.s
+CMakeFiles/learn_C.dir/day06/test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day06/test.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day06/test.c -o CMakeFiles/learn_C.dir/day06/test.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/rush00/ex00/main.c.o" \
-"CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o" \
-"CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o"
+"CMakeFiles/learn_C.dir/day06/test.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/rush00/ex00/main.c.o
-learn_C: CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o
-learn_C: CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o
+learn_C: CMakeFiles/learn_C.dir/day06/test.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
+learn_C: ../day06/ex00/lib/libft.a
 learn_C: CMakeFiles/learn_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable learn_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable learn_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learn_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

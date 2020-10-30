@@ -143,86 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-rush00/ex00/ft_putchar.o: rush00/ex00/ft_putchar.c.o
+day06/test.o: day06/test.c.o
 
-.PHONY : rush00/ex00/ft_putchar.o
-
-# target to build an object file
-rush00/ex00/ft_putchar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.o
-.PHONY : rush00/ex00/ft_putchar.c.o
-
-rush00/ex00/ft_putchar.i: rush00/ex00/ft_putchar.c.i
-
-.PHONY : rush00/ex00/ft_putchar.i
-
-# target to preprocess a source file
-rush00/ex00/ft_putchar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.i
-.PHONY : rush00/ex00/ft_putchar.c.i
-
-rush00/ex00/ft_putchar.s: rush00/ex00/ft_putchar.c.s
-
-.PHONY : rush00/ex00/ft_putchar.s
-
-# target to generate assembly for a file
-rush00/ex00/ft_putchar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/ft_putchar.c.s
-.PHONY : rush00/ex00/ft_putchar.c.s
-
-rush00/ex00/main.o: rush00/ex00/main.c.o
-
-.PHONY : rush00/ex00/main.o
+.PHONY : day06/test.o
 
 # target to build an object file
-rush00/ex00/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.o
-.PHONY : rush00/ex00/main.c.o
+day06/test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.o
+.PHONY : day06/test.c.o
 
-rush00/ex00/main.i: rush00/ex00/main.c.i
+day06/test.i: day06/test.c.i
 
-.PHONY : rush00/ex00/main.i
-
-# target to preprocess a source file
-rush00/ex00/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.i
-.PHONY : rush00/ex00/main.c.i
-
-rush00/ex00/main.s: rush00/ex00/main.c.s
-
-.PHONY : rush00/ex00/main.s
-
-# target to generate assembly for a file
-rush00/ex00/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/main.c.s
-.PHONY : rush00/ex00/main.c.s
-
-rush00/ex00/rush04.o: rush00/ex00/rush04.c.o
-
-.PHONY : rush00/ex00/rush04.o
-
-# target to build an object file
-rush00/ex00/rush04.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.o
-.PHONY : rush00/ex00/rush04.c.o
-
-rush00/ex00/rush04.i: rush00/ex00/rush04.c.i
-
-.PHONY : rush00/ex00/rush04.i
+.PHONY : day06/test.i
 
 # target to preprocess a source file
-rush00/ex00/rush04.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.i
-.PHONY : rush00/ex00/rush04.c.i
+day06/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.i
+.PHONY : day06/test.c.i
 
-rush00/ex00/rush04.s: rush00/ex00/rush04.c.s
+day06/test.s: day06/test.c.s
 
-.PHONY : rush00/ex00/rush04.s
+.PHONY : day06/test.s
 
 # target to generate assembly for a file
-rush00/ex00/rush04.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/rush00/ex00/rush04.c.s
-.PHONY : rush00/ex00/rush04.c.s
+day06/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.s
+.PHONY : day06/test.c.s
 
 # Help Target
 help:
@@ -233,15 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... rush00/ex00/ft_putchar.o"
-	@echo "... rush00/ex00/ft_putchar.i"
-	@echo "... rush00/ex00/ft_putchar.s"
-	@echo "... rush00/ex00/main.o"
-	@echo "... rush00/ex00/main.i"
-	@echo "... rush00/ex00/main.s"
-	@echo "... rush00/ex00/rush04.o"
-	@echo "... rush00/ex00/rush04.i"
-	@echo "... rush00/ex00/rush04.s"
+	@echo "... day06/test.o"
+	@echo "... day06/test.i"
+	@echo "... day06/test.s"
 .PHONY : help
 
 
