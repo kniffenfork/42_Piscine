@@ -77,27 +77,27 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/day06/test.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/day06/test.c.o: ../day06/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day06/test.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day06/test.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day06/test.c
+CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o: ../day06/ex04/ft_sort_params.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day06/ex04/ft_sort_params.c
 
-CMakeFiles/learn_C.dir/day06/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day06/test.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day06/test.c > CMakeFiles/learn_C.dir/day06/test.c.i
+CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day06/ex04/ft_sort_params.c > CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.i
 
-CMakeFiles/learn_C.dir/day06/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day06/test.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day06/test.c -o CMakeFiles/learn_C.dir/day06/test.c.s
+CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day06/ex04/ft_sort_params.c -o CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/day06/test.c.o"
+"CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/day06/test.c.o
+learn_C: CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
 learn_C: ../day06/ex00/lib/libft.a
 learn_C: CMakeFiles/learn_C.dir/link.txt

@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day06/test.o: day06/test.c.o
+day06/ex04/ft_sort_params.o: day06/ex04/ft_sort_params.c.o
 
-.PHONY : day06/test.o
+.PHONY : day06/ex04/ft_sort_params.o
 
 # target to build an object file
-day06/test.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.o
-.PHONY : day06/test.c.o
+day06/ex04/ft_sort_params.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o
+.PHONY : day06/ex04/ft_sort_params.c.o
 
-day06/test.i: day06/test.c.i
+day06/ex04/ft_sort_params.i: day06/ex04/ft_sort_params.c.i
 
-.PHONY : day06/test.i
+.PHONY : day06/ex04/ft_sort_params.i
 
 # target to preprocess a source file
-day06/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.i
-.PHONY : day06/test.c.i
+day06/ex04/ft_sort_params.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.i
+.PHONY : day06/ex04/ft_sort_params.c.i
 
-day06/test.s: day06/test.c.s
+day06/ex04/ft_sort_params.s: day06/ex04/ft_sort_params.c.s
 
-.PHONY : day06/test.s
+.PHONY : day06/ex04/ft_sort_params.s
 
 # target to generate assembly for a file
-day06/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/test.c.s
-.PHONY : day06/test.c.s
+day06/ex04/ft_sort_params.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.s
+.PHONY : day06/ex04/ft_sort_params.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day06/test.o"
-	@echo "... day06/test.i"
-	@echo "... day06/test.s"
+	@echo "... day06/ex04/ft_sort_params.o"
+	@echo "... day06/ex04/ft_sort_params.i"
+	@echo "... day06/ex04/ft_sort_params.s"
 .PHONY : help
 
 
