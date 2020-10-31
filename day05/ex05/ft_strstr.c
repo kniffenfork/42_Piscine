@@ -13,6 +13,10 @@ int strlength(char *str)
 char *ft_strstr(char *str, const char *to_find)
 {
     char *res;
+    /*
+     * если хочется пооптимизировать:
+     * for (int i = 0; i < strlenght(str) - strlenght(to_find), но надо считать, не уверен
+     */
     for (int i = 0; i < strlength(str); i++) {
         if (str[i] == to_find[0]) {
             int j = 0;
