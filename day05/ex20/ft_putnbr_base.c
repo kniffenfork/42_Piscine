@@ -43,43 +43,42 @@ int ft_count_in_str(char *str, char el)
 }
 
 void ft_putnbr_base(int nb, const char *base)
-{
-    int sys = 0;
-    char answer[100];
+{//короче длинная очень функция, разбить хорошо бы
+	int i = 0;
+	int flag = 0;
+	int sys = 0;
+	char answer[100];
 
-    while (base[sys])
+	while (base[sys])
     {
-        if (base[sys] == '-' || base[sys] == '+' || ft_count_in_str(base, base[sys]) > 1)
-            _exit(0);
-        sys++;
-    }
-    if (sys <= 1)
-        _exit(0);
+		if (base[sys] == '-' || base[sys] == '+' || ft_count_in_str(base, base[sys]) > 1)
+		{
+			_exit(0);
+		}
+		sys++;
+	}
+	if (sys <= 1)
+	{
+		_exit(0);
+	}
 
-    int i = 0;
-    int flag = 0;
-
-    if (nb < 0)
+	if (nb < 0)
     {
         nb *= -1;
         flag = 1;
     }
-
     while (nb > sys)
     {
         answer[i] = base[nb % sys];
         nb /= sys;
         i++;
     }
-
     answer[i] = base[nb];
-
     if (flag == 1)
     {
         answer[i + 1] = '-';
         i++;
     }
-
     answer[i + 1] = '\0';
     ft_strrev(answer);
     ft_putstr(answer);
