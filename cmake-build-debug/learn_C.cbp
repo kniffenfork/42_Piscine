@@ -76,10 +76,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h">
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day05/ex09/ft_strlowcase.c">
 			<Option target="learn_C"/>
 		</Unit>
-		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day06/ex04/ft_sort_params.c">
+		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h">
 			<Option target="learn_C"/>
 		</Unit>
 		<Unit filename="/Users/user/Desktop/Informatiks/learn_C/CMakeLists.txt">

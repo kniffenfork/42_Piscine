@@ -37,3 +37,5 @@ int main(int arc, char *argv[])
         ft_putchar('\n');
     }
 }
+
+}

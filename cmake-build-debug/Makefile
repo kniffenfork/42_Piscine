@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day06/ex04/ft_sort_params.o: day06/ex04/ft_sort_params.c.o
+day05/ex09/ft_strlowcase.o: day05/ex09/ft_strlowcase.c.o
 
-.PHONY : day06/ex04/ft_sort_params.o
+.PHONY : day05/ex09/ft_strlowcase.o
 
 # target to build an object file
-day06/ex04/ft_sort_params.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o
-.PHONY : day06/ex04/ft_sort_params.c.o
+day05/ex09/ft_strlowcase.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o
+.PHONY : day05/ex09/ft_strlowcase.c.o
 
-day06/ex04/ft_sort_params.i: day06/ex04/ft_sort_params.c.i
+day05/ex09/ft_strlowcase.i: day05/ex09/ft_strlowcase.c.i
 
-.PHONY : day06/ex04/ft_sort_params.i
+.PHONY : day05/ex09/ft_strlowcase.i
 
 # target to preprocess a source file
-day06/ex04/ft_sort_params.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.i
-.PHONY : day06/ex04/ft_sort_params.c.i
+day05/ex09/ft_strlowcase.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.i
+.PHONY : day05/ex09/ft_strlowcase.c.i
 
-day06/ex04/ft_sort_params.s: day06/ex04/ft_sort_params.c.s
+day05/ex09/ft_strlowcase.s: day05/ex09/ft_strlowcase.c.s
 
-.PHONY : day06/ex04/ft_sort_params.s
+.PHONY : day05/ex09/ft_strlowcase.s
 
 # target to generate assembly for a file
-day06/ex04/ft_sort_params.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.s
-.PHONY : day06/ex04/ft_sort_params.c.s
+day05/ex09/ft_strlowcase.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.s
+.PHONY : day05/ex09/ft_strlowcase.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day06/ex04/ft_sort_params.o"
-	@echo "... day06/ex04/ft_sort_params.i"
-	@echo "... day06/ex04/ft_sort_params.s"
+	@echo "... day05/ex09/ft_strlowcase.o"
+	@echo "... day05/ex09/ft_strlowcase.i"
+	@echo "... day05/ex09/ft_strlowcase.s"
 .PHONY : help
 
 

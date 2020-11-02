@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/day06/ex04/ft_sort_params.c.o"
+  "CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o"
   "learn_C"
   "learn_C.pdb"
 )
