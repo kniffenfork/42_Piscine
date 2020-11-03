@@ -1,6 +1,5 @@
 #include "../../day06/ex00/include/libft.h"
 #include <stdlib.h>
-#include <string.h>
 
 char *ft_strdup(char *str)
 {

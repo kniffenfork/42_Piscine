@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day05/ex09/ft_strlowcase.o: day05/ex09/ft_strlowcase.c.o
+day07/ex04/ft_split_whitespaces.o: day07/ex04/ft_split_whitespaces.c.o
 
-.PHONY : day05/ex09/ft_strlowcase.o
+.PHONY : day07/ex04/ft_split_whitespaces.o
 
 # target to build an object file
-day05/ex09/ft_strlowcase.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o
-.PHONY : day05/ex09/ft_strlowcase.c.o
+day07/ex04/ft_split_whitespaces.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o
+.PHONY : day07/ex04/ft_split_whitespaces.c.o
 
-day05/ex09/ft_strlowcase.i: day05/ex09/ft_strlowcase.c.i
+day07/ex04/ft_split_whitespaces.i: day07/ex04/ft_split_whitespaces.c.i
 
-.PHONY : day05/ex09/ft_strlowcase.i
+.PHONY : day07/ex04/ft_split_whitespaces.i
 
 # target to preprocess a source file
-day05/ex09/ft_strlowcase.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.i
-.PHONY : day05/ex09/ft_strlowcase.c.i
+day07/ex04/ft_split_whitespaces.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i
+.PHONY : day07/ex04/ft_split_whitespaces.c.i
 
-day05/ex09/ft_strlowcase.s: day05/ex09/ft_strlowcase.c.s
+day07/ex04/ft_split_whitespaces.s: day07/ex04/ft_split_whitespaces.c.s
 
-.PHONY : day05/ex09/ft_strlowcase.s
+.PHONY : day07/ex04/ft_split_whitespaces.s
 
 # target to generate assembly for a file
-day05/ex09/ft_strlowcase.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.s
-.PHONY : day05/ex09/ft_strlowcase.c.s
+day07/ex04/ft_split_whitespaces.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s
+.PHONY : day07/ex04/ft_split_whitespaces.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day05/ex09/ft_strlowcase.o"
-	@echo "... day05/ex09/ft_strlowcase.i"
-	@echo "... day05/ex09/ft_strlowcase.s"
+	@echo "... day07/ex04/ft_split_whitespaces.o"
+	@echo "... day07/ex04/ft_split_whitespaces.i"
+	@echo "... day07/ex04/ft_split_whitespaces.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
-#include "../../day06/ex00/include/libft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int *ft_range(int min, int max)
 {
@@ -12,7 +12,7 @@ int *ft_range(int min, int max)
         return result;
 
     else
-        {
+    {
         int i = (min);
         for (int j = 0; j < (max - min); j++)
         {
@@ -23,4 +23,19 @@ int *ft_range(int min, int max)
     }
 }
 
+int ft_ultimate_range(int **range, int min, int max)
+{
+    *range = ft_range(min, max);
+    if (range == NULL)
+        return 0;
+    else
+    {
+        return (max - min);
+    }
+}
 
+int main()
+{
+    int *arr;
+    printf("%d", ft_ultimate_range(&arr, 0, 9));
+}

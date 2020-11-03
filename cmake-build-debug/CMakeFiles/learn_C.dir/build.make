@@ -77,27 +77,27 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o: ../day05/ex09/ft_strlowcase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day05/ex09/ft_strlowcase.c
+CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: ../day07/ex04/ft_split_whitespaces.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c
 
-CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day05/ex09/ft_strlowcase.c > CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.i
+CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c > CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i
 
-CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day05/ex09/ft_strlowcase.c -o CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.s
+CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c -o CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o"
+"CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o
+learn_C: CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
 learn_C: ../day06/ex00/lib/libft.a
 learn_C: CMakeFiles/learn_C.dir/link.txt

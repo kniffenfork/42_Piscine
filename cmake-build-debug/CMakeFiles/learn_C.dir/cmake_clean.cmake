@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/day05/ex09/ft_strlowcase.c.o"
+  "CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
   "learn_C"
   "learn_C.pdb"
 )
