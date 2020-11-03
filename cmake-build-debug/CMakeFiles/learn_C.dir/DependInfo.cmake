@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
+  "/Users/user/Desktop/Informatiks/learn_C/day07/ex05/ft_print_words_tables.c" "/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

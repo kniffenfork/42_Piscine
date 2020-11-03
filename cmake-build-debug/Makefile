@@ -170,6 +170,33 @@ day07/ex04/ft_split_whitespaces.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s
 .PHONY : day07/ex04/ft_split_whitespaces.c.s
 
+day07/ex05/ft_print_words_tables.o: day07/ex05/ft_print_words_tables.c.o
+
+.PHONY : day07/ex05/ft_print_words_tables.o
+
+# target to build an object file
+day07/ex05/ft_print_words_tables.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o
+.PHONY : day07/ex05/ft_print_words_tables.c.o
+
+day07/ex05/ft_print_words_tables.i: day07/ex05/ft_print_words_tables.c.i
+
+.PHONY : day07/ex05/ft_print_words_tables.i
+
+# target to preprocess a source file
+day07/ex05/ft_print_words_tables.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.i
+.PHONY : day07/ex05/ft_print_words_tables.c.i
+
+day07/ex05/ft_print_words_tables.s: day07/ex05/ft_print_words_tables.c.s
+
+.PHONY : day07/ex05/ft_print_words_tables.s
+
+# target to generate assembly for a file
+day07/ex05/ft_print_words_tables.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.s
+.PHONY : day07/ex05/ft_print_words_tables.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... day07/ex04/ft_split_whitespaces.o"
 	@echo "... day07/ex04/ft_split_whitespaces.i"
 	@echo "... day07/ex04/ft_split_whitespaces.s"
+	@echo "... day07/ex05/ft_print_words_tables.o"
+	@echo "... day07/ex05/ft_print_words_tables.i"
+	@echo "... day07/ex05/ft_print_words_tables.s"
 .PHONY : help
 
 

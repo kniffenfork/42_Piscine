@@ -4,3 +4,6 @@
 CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: ../day06/ex00/include/libft.h
 CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: ../day07/ex04/ft_split_whitespaces.c
 
+CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o: ../day06/ex00/include/libft.h
+CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o: ../day07/ex05/ft_print_words_tables.c
+
