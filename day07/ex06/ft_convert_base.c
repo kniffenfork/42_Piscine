@@ -122,7 +122,8 @@ char *ft_from_decimal(char *nbr, char *base_to)
         i++;
         j++;
     }
-    answer = realloc(answer, (sizeof(char) * j));
+    answer = realloc(answer, (sizeof(char) * j)); // я могу безусловно переписать на маллок с доп функцией-- но будет больно коряво по асимптотике
+    // или же вовсе сделать буфер огромный, хуле))00
     answer[i] = base_to[num];
     if (is_negative)
     {
