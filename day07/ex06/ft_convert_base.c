@@ -109,7 +109,7 @@ char *ft_from_decimal(char *nbr, char *base_to)
         num *= -1;
         is_negative = 1;
     }
-    int j = 2;
+    int j = 4;
 
     char *answer = malloc(sizeof(char) * j);
 
@@ -147,7 +147,7 @@ char *ft_to_decimal(char *nbr, char *base_from)
         nbr = ft_num_to_str(num);
         is_negative = 1;
     }
-    int j = 2;
+    int j = 4;
 
     char *answer = malloc(sizeof(char) * j);
 
