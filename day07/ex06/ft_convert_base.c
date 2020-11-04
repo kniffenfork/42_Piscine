@@ -117,14 +117,13 @@ char *ft_from_decimal(char *nbr, char *base_to)
     while (num >= 1)
     {
         answer = realloc(answer, (sizeof(char) * j));
+        // я могу безусловно переписать на маллок -- но будет больно коряво
+        // или же вовсе сделать буфер огромный, хуле))00
         answer[i] = base_to[num % sys_to];
         num /= sys_to;
         i++;
         j++;
     }
-    answer = realloc(answer, (sizeof(char) * j));
-    // я могу безусловно переписать на маллок -- но будет больно коряво
-    // или же вовсе сделать буфер огромный, хуле))00
     answer[i] = base_to[num];
     if (is_negative)
     {
@@ -164,7 +163,7 @@ char *ft_to_decimal(char *nbr, char *base_from)
     if (is_negative)
         answer[0] = '-';
     ft_strcat(answer, res_num_str);
-
+    answer[i] = '\0';
     return answer;
 }
 
@@ -198,7 +197,7 @@ char *ft_convert_base(char *nbr, char *base_from, char *base_to)
 
 int main()
 {
-    char *ans = ft_convert_base("144", "01234567", "01");
+    char *ans = ft_convert_base("100000", "01", "0123456789");
     int i = 0;
     while (ans[i] != '\0')
     {
