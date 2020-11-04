@@ -77,46 +77,31 @@ include CMakeFiles/learn_C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn_C.dir/flags.make
 
-CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o: ../day07/ex05/ft_print_words_tables.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day07/ex05/ft_print_words_tables.c
+CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o: CMakeFiles/learn_C.dir/flags.make
+CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o: ../day07/ex06/ft_convert_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day07/ex06/ft_convert_base.c
 
-CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day07/ex05/ft_print_words_tables.c > CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.i
+CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day07/ex06/ft_convert_base.c > CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.i
 
-CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day07/ex05/ft_print_words_tables.c -o CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.s
-
-CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: CMakeFiles/learn_C.dir/flags.make
-CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o: ../day07/ex04/ft_split_whitespaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o   -c /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c
-
-CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c > CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i
-
-CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day07/ex04/ft_split_whitespaces.c -o CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s
+CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/user/Desktop/Informatiks/learn_C/day07/ex06/ft_convert_base.c -o CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.s
 
 # Object files for target learn_C
 learn_C_OBJECTS = \
-"CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o" \
-"CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o"
+"CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o"
 
 # External object files for target learn_C
 learn_C_EXTERNAL_OBJECTS =
 
-learn_C: CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o
-learn_C: CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o
+learn_C: CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o
 learn_C: CMakeFiles/learn_C.dir/build.make
 learn_C: ../day06/ex00/lib/libft.a
 learn_C: CMakeFiles/learn_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable learn_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Desktop/Informatiks/learn_C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable learn_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learn_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

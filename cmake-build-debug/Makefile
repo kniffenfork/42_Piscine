@@ -143,59 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day07/ex04/ft_split_whitespaces.o: day07/ex04/ft_split_whitespaces.c.o
+day07/ex06/ft_convert_base.o: day07/ex06/ft_convert_base.c.o
 
-.PHONY : day07/ex04/ft_split_whitespaces.o
-
-# target to build an object file
-day07/ex04/ft_split_whitespaces.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.o
-.PHONY : day07/ex04/ft_split_whitespaces.c.o
-
-day07/ex04/ft_split_whitespaces.i: day07/ex04/ft_split_whitespaces.c.i
-
-.PHONY : day07/ex04/ft_split_whitespaces.i
-
-# target to preprocess a source file
-day07/ex04/ft_split_whitespaces.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.i
-.PHONY : day07/ex04/ft_split_whitespaces.c.i
-
-day07/ex04/ft_split_whitespaces.s: day07/ex04/ft_split_whitespaces.c.s
-
-.PHONY : day07/ex04/ft_split_whitespaces.s
-
-# target to generate assembly for a file
-day07/ex04/ft_split_whitespaces.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex04/ft_split_whitespaces.c.s
-.PHONY : day07/ex04/ft_split_whitespaces.c.s
-
-day07/ex05/ft_print_words_tables.o: day07/ex05/ft_print_words_tables.c.o
-
-.PHONY : day07/ex05/ft_print_words_tables.o
+.PHONY : day07/ex06/ft_convert_base.o
 
 # target to build an object file
-day07/ex05/ft_print_words_tables.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.o
-.PHONY : day07/ex05/ft_print_words_tables.c.o
+day07/ex06/ft_convert_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o
+.PHONY : day07/ex06/ft_convert_base.c.o
 
-day07/ex05/ft_print_words_tables.i: day07/ex05/ft_print_words_tables.c.i
+day07/ex06/ft_convert_base.i: day07/ex06/ft_convert_base.c.i
 
-.PHONY : day07/ex05/ft_print_words_tables.i
+.PHONY : day07/ex06/ft_convert_base.i
 
 # target to preprocess a source file
-day07/ex05/ft_print_words_tables.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.i
-.PHONY : day07/ex05/ft_print_words_tables.c.i
+day07/ex06/ft_convert_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.i
+.PHONY : day07/ex06/ft_convert_base.c.i
 
-day07/ex05/ft_print_words_tables.s: day07/ex05/ft_print_words_tables.c.s
+day07/ex06/ft_convert_base.s: day07/ex06/ft_convert_base.c.s
 
-.PHONY : day07/ex05/ft_print_words_tables.s
+.PHONY : day07/ex06/ft_convert_base.s
 
 # target to generate assembly for a file
-day07/ex05/ft_print_words_tables.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex05/ft_print_words_tables.c.s
-.PHONY : day07/ex05/ft_print_words_tables.c.s
+day07/ex06/ft_convert_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.s
+.PHONY : day07/ex06/ft_convert_base.c.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day07/ex04/ft_split_whitespaces.o"
-	@echo "... day07/ex04/ft_split_whitespaces.i"
-	@echo "... day07/ex04/ft_split_whitespaces.s"
-	@echo "... day07/ex05/ft_print_words_tables.o"
-	@echo "... day07/ex05/ft_print_words_tables.i"
-	@echo "... day07/ex05/ft_print_words_tables.s"
+	@echo "... day07/ex06/ft_convert_base.o"
+	@echo "... day07/ex06/ft_convert_base.i"
+	@echo "... day07/ex06/ft_convert_base.s"
 .PHONY : help
 
 
