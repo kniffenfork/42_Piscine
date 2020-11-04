@@ -33,7 +33,7 @@ int count_of_words(char *str)
 
 int *length_of_words(char *str)
 {
-    int *result = malloc(sizeof(int) * count_of_words(str));
+    int *result = (int *)malloc(sizeof(int) * count_of_words(str) + sizeof(int));
     int i = 0;
     int j = 0;
     int k = 0;

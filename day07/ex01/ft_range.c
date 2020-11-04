@@ -3,7 +3,7 @@
 
 int *ft_range(int min, int max)
 {
-    int *result = malloc(((max - min) * sizeof(int)));
+    int *result = (int *)malloc(((max - min) * sizeof(int)) + sizeof(int));
 
     if (min >= max)
         return 0;

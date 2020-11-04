@@ -4,7 +4,7 @@
 
 char *ft_concat_params(int argc, char **argv)
 {
-    char *result = malloc(sizeof(argv));
+    char *result = (char *)malloc(sizeof(argv));
 
     if (result == NULL)
         return result;

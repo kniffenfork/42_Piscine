@@ -71,7 +71,7 @@ int ft_len_of_num(int num)
 
 char *ft_num_to_str(int c)
 {
-    char *res_arr = malloc(sizeof(char) * ft_len_of_num(c));
+    char *res_arr = (char *)malloc(sizeof(char) * ft_len_of_num(c));
     int flag = 0;
     if (c < 0)
     {
@@ -111,7 +111,7 @@ char *ft_from_decimal(char *nbr, char *base_to)
     }
     int j = 4;
 
-    char *answer = malloc(sizeof(char) * j);
+    char *answer = (char *)malloc(sizeof(char) * j);
 
     int i = 0;
     while (num >= 1)
@@ -149,7 +149,7 @@ char *ft_to_decimal(char *nbr, char *base_from)
     }
     int j = 4;
 
-    char *answer = malloc(sizeof(char) * j);
+    char *answer = (char *)malloc(sizeof(char) * j);
 
     int i = 0;
     int power = ft_strlen(nbr) - 1;
