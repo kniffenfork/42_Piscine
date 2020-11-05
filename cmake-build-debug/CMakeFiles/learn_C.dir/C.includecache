@@ -8,7 +8,9 @@
 
 /Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h
 
-/Users/user/Desktop/Informatiks/learn_C/day07/ex06/ft_convert_base.c
+/Users/user/Desktop/Informatiks/learn_C/day07/ex07/ft_split.c
+stdio.h
+-
 stdlib.h
 -
 ../../day06/ex00/include/libft.h

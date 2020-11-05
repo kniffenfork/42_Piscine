@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day07/ex06/ft_convert_base.o: day07/ex06/ft_convert_base.c.o
+day07/ex07/ft_split.o: day07/ex07/ft_split.c.o
 
-.PHONY : day07/ex06/ft_convert_base.o
+.PHONY : day07/ex07/ft_split.o
 
 # target to build an object file
-day07/ex06/ft_convert_base.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.o
-.PHONY : day07/ex06/ft_convert_base.c.o
+day07/ex07/ft_split.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.o
+.PHONY : day07/ex07/ft_split.c.o
 
-day07/ex06/ft_convert_base.i: day07/ex06/ft_convert_base.c.i
+day07/ex07/ft_split.i: day07/ex07/ft_split.c.i
 
-.PHONY : day07/ex06/ft_convert_base.i
+.PHONY : day07/ex07/ft_split.i
 
 # target to preprocess a source file
-day07/ex06/ft_convert_base.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.i
-.PHONY : day07/ex06/ft_convert_base.c.i
+day07/ex07/ft_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.i
+.PHONY : day07/ex07/ft_split.c.i
 
-day07/ex06/ft_convert_base.s: day07/ex06/ft_convert_base.c.s
+day07/ex07/ft_split.s: day07/ex07/ft_split.c.s
 
-.PHONY : day07/ex06/ft_convert_base.s
+.PHONY : day07/ex07/ft_split.s
 
 # target to generate assembly for a file
-day07/ex06/ft_convert_base.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex06/ft_convert_base.c.s
-.PHONY : day07/ex06/ft_convert_base.c.s
+day07/ex07/ft_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.s
+.PHONY : day07/ex07/ft_split.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day07/ex06/ft_convert_base.o"
-	@echo "... day07/ex06/ft_convert_base.i"
-	@echo "... day07/ex06/ft_convert_base.s"
+	@echo "... day07/ex07/ft_split.o"
+	@echo "... day07/ex07/ft_split.i"
+	@echo "... day07/ex07/ft_split.s"
 .PHONY : help
 
 
