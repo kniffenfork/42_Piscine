@@ -10,9 +10,9 @@ char *ft_strstr(char *str, const char *to_find)
             while (to_find[j]) {
                 if (to_find[j] != str[k])
                     break;
+                j++;
             }
-            res = str[i];
-            return res;
+            res = &str[i];
         }
     }
     return res;

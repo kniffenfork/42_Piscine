@@ -1,18 +1,9 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "../../day06/ex00/include/libft.h"
+// Извени за этот фильм ужасов из мира асимптотики -- учился так маллоком пользоваться ))00 (охуел чот пока писал)
+#include <stdio.h>
 
-int ft_el_in_str(char *str, char el)
-{
-    for (int i = 0; i < ft_strlen(str); i++)
-    {
-        if (str[i] == el)
-            return 1;
-    }
-    return 0;
-}
-
-int count_of_words(char *str, char *sep)
+int count_of_words(char *str)
 {
     int flag = 0;
     int res = 1;
@@ -21,9 +12,9 @@ int count_of_words(char *str, char *sep)
     else if (str[ft_strlen(str)] == ' ')
         res = 0;
     int i = 0;
-    while (str[i])
+    while (str[i] != '\0')
     {
-        while (ft_el_in_str(sep, str[i]))
+        while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
         {
             flag = 1;
             i++;
@@ -40,16 +31,16 @@ int count_of_words(char *str, char *sep)
     return res;
 }
 
-int *length_of_words(char *str, char *sep)
+int *length_of_words(char *str)
 {
-    int *result = (int *)malloc(sizeof(int) * count_of_words(str, sep) + sizeof(int));
+    int *result = (int *)malloc(sizeof(int) * count_of_words(str) + sizeof(int));
     int i = 0;
     int j = 0;
     int k = 0;
     int flag = 0;
     while (str[i] != '\0')
     {
-        while (ft_el_in_str(sep, str[i]))
+        while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
         {
             flag = 1;
             i++;
@@ -71,19 +62,17 @@ int *length_of_words(char *str, char *sep)
     return result;
 }
 
-char **ft_split(char *str, char *charset)
+char **ft_split_whitespaces(char *str)
 {
-    char **result = (char **)malloc(sizeof(char *) * count_of_words(str, charset) + 1);
-    int *arr_of_length = length_of_words(str, charset);
+    char **result = (char **)malloc(sizeof(char *) * (count_of_words(str)) + sizeof(char *));
+    int *arr_of_length = length_of_words(str);
     int i = 0;
     int j = 0;
+    result[j] = (char *)malloc(sizeof(char) * arr_of_length[j] + sizeof('\0'));
     int k = 0;
     int flag = 0;
-
-    result[j] = (char *)malloc(sizeof(char) * arr_of_length[j] + sizeof('\0'));
-    while (str[i])
-    {
-        if (ft_el_in_str(charset, str[i]))
+    while (str[i] != '\0') {
+        if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
         {
             flag = 1;
             i++;
@@ -99,33 +88,14 @@ char **ft_split(char *str, char *charset)
             k++;
             i++;
         }
-        else if (!ft_el_in_str(charset, str[i]))
-        {
+        else if (str[i] != ' ')
+            {
             result[j][k] = str[i]; // если это не пробел и не первый элемент то просто хреначим в уже готовое место букву
             k++;
             i++;
-        }
+            }
     }
     return result;
 }
 
 
-
-int main()
-{
-    char *str = "Zalupa zhopa vo vremya semyaizverzhenia, slilis' voedino...";
-    char **res = ft_split(str, " a.,");
-    int i = 0;
-    while (res[i] != NULL)
-    {
-        if (res[i + 1] != NULL)
-        {
-            ft_putstr(res[i]);
-            ft_putchar(',');
-            ft_putchar(' ');
-        }
-        else
-            ft_putstr(res[i]);
-        i++;
-    }
-}
