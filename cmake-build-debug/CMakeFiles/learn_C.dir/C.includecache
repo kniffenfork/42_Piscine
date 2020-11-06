@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h
+/Users/user/Desktop/Informatiks/learn_C/day08/ex04/ft_point.h
 
-/Users/user/Desktop/Informatiks/learn_C/day07/ex07/ft_split.c
+/Users/user/Desktop/Informatiks/learn_C/day08/ex04/main.c
+ft_point.h
+/Users/user/Desktop/Informatiks/learn_C/day08/ex04/ft_point.h
 stdio.h
 -
-stdlib.h
--
-../../day06/ex00/include/libft.h
-/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h
 

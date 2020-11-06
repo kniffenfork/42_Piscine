@@ -1,6 +1,8 @@
 #ifndef LEARN_C_LIBFT_H
 #define LEARN_C_LIBFT_H
 
+#define ABS(nbr) (((nbr) >= 0) ? (nbr) : ((nbr) * (-1)))
+
 int ft_power(int n, int k);
 
 void ft_putchar(char c);

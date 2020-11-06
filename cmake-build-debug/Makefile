@@ -143,32 +143,32 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day07/ex07/ft_split.o: day07/ex07/ft_split.c.o
+day08/ex04/main.o: day08/ex04/main.c.o
 
-.PHONY : day07/ex07/ft_split.o
+.PHONY : day08/ex04/main.o
 
 # target to build an object file
-day07/ex07/ft_split.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.o
-.PHONY : day07/ex07/ft_split.c.o
+day08/ex04/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.o
+.PHONY : day08/ex04/main.c.o
 
-day07/ex07/ft_split.i: day07/ex07/ft_split.c.i
+day08/ex04/main.i: day08/ex04/main.c.i
 
-.PHONY : day07/ex07/ft_split.i
+.PHONY : day08/ex04/main.i
 
 # target to preprocess a source file
-day07/ex07/ft_split.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.i
-.PHONY : day07/ex07/ft_split.c.i
+day08/ex04/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.i
+.PHONY : day08/ex04/main.c.i
 
-day07/ex07/ft_split.s: day07/ex07/ft_split.c.s
+day08/ex04/main.s: day08/ex04/main.c.s
 
-.PHONY : day07/ex07/ft_split.s
+.PHONY : day08/ex04/main.s
 
 # target to generate assembly for a file
-day07/ex07/ft_split.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day07/ex07/ft_split.c.s
-.PHONY : day07/ex07/ft_split.c.s
+day08/ex04/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.s
+.PHONY : day08/ex04/main.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day07/ex07/ft_split.o"
-	@echo "... day07/ex07/ft_split.i"
-	@echo "... day07/ex07/ft_split.s"
+	@echo "... day08/ex04/main.o"
+	@echo "... day08/ex04/main.i"
+	@echo "... day08/ex04/main.s"
 .PHONY : help
 
 

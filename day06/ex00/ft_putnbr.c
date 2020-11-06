@@ -1,9 +1,17 @@
+#include <stdlib.h>
+
 void ft_putchar(char c);
 
 int ft_power(int n, int k);
 
 void ft_putnbr(int c)
 {
+    if (c == 0)
+    {
+        ft_putchar(c + '0');
+        exit(0);
+    }
+
     int flag = 0;
     if (c < 0)
     {
