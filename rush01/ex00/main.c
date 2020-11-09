@@ -1,6 +1,9 @@
 #include "sudoku.h"
 
-int main()
+int main(int arc, char **argv)
 {
-    ft_putstr("SUKA");
+    if (one_in_str(argv[1], '1') == TRUE)
+        ft_putstr("TRUE");
+    else
+        ft_putstr("FALSE");
 }

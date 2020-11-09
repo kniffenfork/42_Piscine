@@ -1,4 +1,4 @@
-SRC = main.c
+SRC = main.c one_in_str.c
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
 OBJECTS=$(SRC:.c=.o)
