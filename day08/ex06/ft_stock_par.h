@@ -12,4 +12,7 @@ typedef struct s_stock_par
     char **tab;
 }               t_stock_par;
 
+t_stock_par *ft_param_to_tab(int ac, char **argv);
+
 #endif //LEARN_C_FT_STOCK_PAR_H
+

@@ -1,5 +1,4 @@
 #include "ft_stock_par.h"
-#include "/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h"
 #include <stdio.h>
 
 
@@ -30,9 +29,9 @@ struct	s_stock_par	*ft_param_to_tab(int ac, char **av)
     tab[i].str = NULL;
     return (tab);
 }
-
+/*
 int main(int argc, char **argv)
 {
     t_stock_par *answer = ft_param_to_tab(argc, argv);
     ft_putstr(*answer[1].tab); // Ура нахуй
-}
+}*/
