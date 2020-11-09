@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/day08/ex04/main.c.o  -o learn_C  ../day06/ex00/lib/libft.a 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/learn_C.dir/day08/ex05/ft_param_to_tab.c.o CMakeFiles/learn_C.dir/day08/ex05/main.c.o  -o learn_C  ../day06/ex00/lib/libft.a 

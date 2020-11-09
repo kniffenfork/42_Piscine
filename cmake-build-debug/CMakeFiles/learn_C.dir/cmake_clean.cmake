@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn_C.dir/day08/ex04/main.c.o"
+  "CMakeFiles/learn_C.dir/day08/ex05/ft_param_to_tab.c.o"
+  "CMakeFiles/learn_C.dir/day08/ex05/main.c.o"
   "learn_C"
   "learn_C.pdb"
 )

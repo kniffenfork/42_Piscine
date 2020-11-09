@@ -49,4 +49,6 @@ char *ft_strupcase(char *str);
 
 void ft_swap(int *a, int*b);
 
+char **ft_split_whitespaces(char *str);
+
 #endif //LEARN_C_LIBFT_H

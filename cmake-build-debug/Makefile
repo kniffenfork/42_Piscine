@@ -143,32 +143,59 @@ learn_C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/build
 .PHONY : learn_C/fast
 
-day08/ex04/main.o: day08/ex04/main.c.o
+day08/ex05/ft_param_to_tab.o: day08/ex05/ft_param_to_tab.c.o
 
-.PHONY : day08/ex04/main.o
+.PHONY : day08/ex05/ft_param_to_tab.o
 
 # target to build an object file
-day08/ex04/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.o
-.PHONY : day08/ex04/main.c.o
+day08/ex05/ft_param_to_tab.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/ft_param_to_tab.c.o
+.PHONY : day08/ex05/ft_param_to_tab.c.o
 
-day08/ex04/main.i: day08/ex04/main.c.i
+day08/ex05/ft_param_to_tab.i: day08/ex05/ft_param_to_tab.c.i
 
-.PHONY : day08/ex04/main.i
+.PHONY : day08/ex05/ft_param_to_tab.i
 
 # target to preprocess a source file
-day08/ex04/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.i
-.PHONY : day08/ex04/main.c.i
+day08/ex05/ft_param_to_tab.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/ft_param_to_tab.c.i
+.PHONY : day08/ex05/ft_param_to_tab.c.i
 
-day08/ex04/main.s: day08/ex04/main.c.s
+day08/ex05/ft_param_to_tab.s: day08/ex05/ft_param_to_tab.c.s
 
-.PHONY : day08/ex04/main.s
+.PHONY : day08/ex05/ft_param_to_tab.s
 
 # target to generate assembly for a file
-day08/ex04/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex04/main.c.s
-.PHONY : day08/ex04/main.c.s
+day08/ex05/ft_param_to_tab.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/ft_param_to_tab.c.s
+.PHONY : day08/ex05/ft_param_to_tab.c.s
+
+day08/ex05/main.o: day08/ex05/main.c.o
+
+.PHONY : day08/ex05/main.o
+
+# target to build an object file
+day08/ex05/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/main.c.o
+.PHONY : day08/ex05/main.c.o
+
+day08/ex05/main.i: day08/ex05/main.c.i
+
+.PHONY : day08/ex05/main.i
+
+# target to preprocess a source file
+day08/ex05/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/main.c.i
+.PHONY : day08/ex05/main.c.i
+
+day08/ex05/main.s: day08/ex05/main.c.s
+
+.PHONY : day08/ex05/main.s
+
+# target to generate assembly for a file
+day08/ex05/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_C.dir/build.make CMakeFiles/learn_C.dir/day08/ex05/main.c.s
+.PHONY : day08/ex05/main.c.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn_C"
-	@echo "... day08/ex04/main.o"
-	@echo "... day08/ex04/main.i"
-	@echo "... day08/ex04/main.s"
+	@echo "... day08/ex05/ft_param_to_tab.o"
+	@echo "... day08/ex05/ft_param_to_tab.i"
+	@echo "... day08/ex05/ft_param_to_tab.s"
+	@echo "... day08/ex05/main.o"
+	@echo "... day08/ex05/main.i"
+	@echo "... day08/ex05/main.s"
 .PHONY : help
 
 
