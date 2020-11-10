@@ -45,6 +45,6 @@ char *ft_strstr(char *str, const char *to_find);
 
 char *ft_strupcase(char *str);
 
-void ft_swap(int *a, int*b);
+void ft_swap(int *a, int *b);
 
 #endif //LEARN_C_LIBFT_H

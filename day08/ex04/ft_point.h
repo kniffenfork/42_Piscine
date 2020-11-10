@@ -4,9 +4,9 @@
 
 typedef struct t_point
 {
-    int x;
-    int y;
-} t_point;
+    int 		x;
+    int 		y;
+} 				t_point;
 
 
 #endif //LEARN_C_FT_POINT_H

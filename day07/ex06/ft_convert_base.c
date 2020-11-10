@@ -116,7 +116,8 @@ char *ft_from_decimal(char *nbr, char *base_to)
     int i = 0;
     while (num >= 1)
     {
-        answer = realloc(answer, (sizeof(char) * j));
+        answer = realloc(answer, (sizeof(char) * j)); // малочь сколько char-ов может уйти на максимальный ull int и сразу его замалочь
+        // , больше не будет
         // я могу безусловно переписать на маллок -- но будет больно коряво
         // или же вовсе сделать буфер огромный, хуле))00
         answer[i] = base_to[num % sys_to];

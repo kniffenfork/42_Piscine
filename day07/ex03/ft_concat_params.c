@@ -18,15 +18,14 @@ char *ft_concat_params(int argc, char **argv)
             result[count] = '\n';
             count++;
         }
+        //для читаемости можно складывать каким-нибудь strcpy, но не смерттельно
         for (int j = 0; j < ft_strlen(argv[i]); j++)
         {
             result[count] = argv[i][j];
             count++;
         }
     }
-
     result[count] = '\0';
-
     return result;
 }
 

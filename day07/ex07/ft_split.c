@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "../../day06/ex00/include/libft.h"
 
-int ft_el_in_str(char *str, char el)
+int ft_el_in_str(char *str, char el)// el хоть назови по нормальному, symbol in str например
 {
     for (int i = 0; i < ft_strlen(str); i++)
     {
@@ -42,7 +42,7 @@ int count_of_words(char *str, char *sep)
 
 int *length_of_words(char *str, char *sep)
 {
-    int *result = (int *)malloc(sizeof(int) * count_of_words(str, sep) + sizeof(int));
+    int *result = (int *)malloc(sizeof(int) * (count_of_words(str, sep) + 1));
     int i = 0;
     int j = 0;
     int k = 0;
@@ -71,7 +71,7 @@ int *length_of_words(char *str, char *sep)
     return result;
 }
 
-char **ft_split(char *str, char *charset)
+char **ft_split(char *str, char *charset) // нахуй ты их по 10 раз переписываешь - 1 раз добавь, ты же так уже делал в предыдущем
 {
     char **result = (char **)malloc(sizeof(char *) * count_of_words(str, charset) + 1);
     int *arr_of_length = length_of_words(str, charset);
@@ -113,7 +113,7 @@ char **ft_split(char *str, char *charset)
 
 int main()
 {
-    char *str = "Zalupa zhopa vo vremya semyaizverzhenia, slilis' voedino...";
+    char *str = "Zalupa zhopa vo vremya semyaizverzhenia, slilis' voedino..."; //глубоко
     char **res = ft_split(str, " ");
     int i = 0;
     while (res[i] != NULL)

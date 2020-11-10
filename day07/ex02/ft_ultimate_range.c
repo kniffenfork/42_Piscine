@@ -3,10 +3,11 @@
 
 int *ft_range(int min, int max)
 {
+	// тоже самое
     int *result = (int *)malloc(((max - min) * sizeof(int) + sizeof(int)));
 
     if (min >= max)
-        return 0;
+        return 0;//утечка в ебало
 
     else if (result == NULL)
         return result;

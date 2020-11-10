@@ -64,11 +64,12 @@ int *length_of_words(char *str)
 
 char **ft_split_whitespaces(char *str)
 {
-    char **result = (char **)malloc(sizeof(char *) * (count_of_words(str)) + sizeof(char *));
+    char **result = (char **)malloc(sizeof(char *) * (count_of_words(str) + 1));// ну уж +1 мог бы посчитать
     int *arr_of_length = length_of_words(str);
     int i = 0;
     int j = 0;
-    result[j] = (char *)malloc(sizeof(char) * arr_of_length[j] + sizeof('\0'));
+    result[j] = (char *)malloc(sizeof(char) * arr_of_length[j] + sizeof('\0'));// мог бы повыделять память под
+    // указатель в цикле, нахуй сначала длину для всех считать - неясно
     int k = 0;
     int flag = 0;
     while (str[i] != '\0') {
@@ -82,8 +83,8 @@ char **ft_split_whitespaces(char *str)
         {
             k = 0;
             flag = 0;
-            j++;
-            result[j] = (char *)malloc(sizeof(char) * arr_of_length[j] + sizeof('\0')); // определяем место в массиве для следующего слова
+            j++; //к строке ниже - +1 прибавь, хуйня какая-то. у \0 размер как у любого char
+            result[j] = (char *)malloc(sizeof(char) * (arr_of_length[j] + 1)); // определяем место в массиве для следующего слова
             result[j][k] = str[i]; // добавляем первый элемент следующего слова
             k++;
             i++;

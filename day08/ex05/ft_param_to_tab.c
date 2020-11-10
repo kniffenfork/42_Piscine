@@ -5,7 +5,7 @@
 char *ft_strdup(char *src)
 {
     char *dest;
-    dest = malloc(sizeof(char) * (ft_strlen(src) + 1));
+    dest = malloc(sizeof(char) * (ft_strlen(src) + 1));//о, а здесь считать умеет
     return (dest ? ft_strcpy(dest, src) : dest);
 }
 
@@ -14,7 +14,7 @@ struct	s_stock_par	*ft_param_to_tab(int ac, char **av)
     t_stock_par	*tab;
     int	i = 0;
     int	j;
-    tab = (t_stock_par *)malloc(sizeof(t_stock_par) * (ac + 1));
+    tab = (t_stock_par *)malloc(sizeof(t_stock_par) * (ac + 1));//хуя, и тут умеет
     while (i < ac)
     {
         j = 0;
