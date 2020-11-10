@@ -2,8 +2,6 @@
 
 int main(int arc, char **argv)
 {
-    if (one_in_str(argv[1], '1') == TRUE)
-        ft_putstr("TRUE");
-    else
-        ft_putstr("FALSE");
+    t_sudoku *ans = fill_sudoku_structure(arc, argv);
+    show_sudoku(ans);
 }

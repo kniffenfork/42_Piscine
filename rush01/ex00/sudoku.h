@@ -9,13 +9,17 @@
 
 typedef int t_bool;
 
-t_bool one_in_str(char *line, char el);
-
-struct sudoku
+typedef struct sudoku
 {
     char **lines;
     char **stolbs;
     char **square;
-};
+    char *point;
+} t_sudoku;
+
+t_bool one_in_line(struct sudoku *sudoko, char el, int nb_line);
+struct	sudoku	*fill_sudoku_structure(int ac, char **av);
+void show_sudoku(t_sudoku *par);
+
 
 #endif //LEARN_C_SUDOKU_H

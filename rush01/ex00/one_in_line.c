@@ -1,18 +1,19 @@
 #include "sudoku.h"
 
-t_bool one_in_str(char *line, char el)
+t_bool one_in_line(t_sudoku *sudoko, char el, int nb_line)
 {
-    int i = 0;
+    int i = nb_line;
+    int j = 0;
     int count = 0;
-    while (line[i])
+    while (sudoko[i].lines[j])
     {
-        if (el == line[i])
+        if (el == *sudoko[i].lines[j])
         {
             count++;
         }
         else if (count > 1)
             return FALSE;
-        i++;
+        j++;
     }
     return TRUE;
 }

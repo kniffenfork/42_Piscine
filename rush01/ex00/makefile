@@ -1,4 +1,4 @@
-SRC = main.c one_in_str.c
+SRC = main.c fill_sudoku_structure.c one_in_line.c show_sudoku.c
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
 OBJECTS=$(SRC:.c=.o)
