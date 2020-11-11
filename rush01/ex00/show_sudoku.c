@@ -5,14 +5,14 @@ void show_sudoku(t_sudoku *par)
     int i = 1;
     while (par[i].point)
     {
-        if (par[i + 1].point)
+        int j = 0;
+        while (par[i].point[j])
         {
-            ft_putstr(par[i].point);
-            ft_putchar('\n');
+            ft_putchar(par[i].point[j]);
+            ft_putchar(' ');
+            j++;
         }
-        else
-            ft_putstr(par[i].point);
+        ft_putchar('\n');
         i++;
     }
-    ft_putchar('\n');
 }

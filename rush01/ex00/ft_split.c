@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "../../day06/ex00/include/libft.h"
+#include "sudoku.h"
 
 int ft_el_in_str(char *str, char symbol_in_str)// el хоть назови по нормальному, symbol in str например
 {
@@ -71,6 +69,21 @@ int *length_of_words(char *str, char *sep)
     return result;
 }
 
+char **ft_split_all(char *str)
+{
+    char **result = (char **)malloc(sizeof(char *) * ft_strlen(str) + 1);
+    int i = 0;
+    result[i] = (char *)malloc(sizeof(char) + 1);
+    while (str[i])
+    {
+        result[i] = (char *)malloc(sizeof(char) + 1);
+        result[i][0] = str[i];
+        i++;
+    }
+    result[i] = NULL;
+    return result;
+}
+
 char **ft_split(char *str, char *charset) // нахуй ты их по 10 раз переписываешь - 1 раз добавь, ты же так уже делал в предыдущем
 {
     char **result = (char **)malloc(sizeof(char *) * count_of_words(str, charset) + 1);
@@ -107,25 +120,4 @@ char **ft_split(char *str, char *charset) // нахуй ты их по 10 раз
         }
     }
     return result;
-}
-
-
-
-int main()
-{
-    char *str = "Zalupa zhopa vo vremya semyaizverzhenia, slilis' voedino..."; //глубоко
-    char **res = ft_split(str, " ");
-    int i = 0;
-    while (res[i] != NULL)
-    {
-        if (res[i + 1] != NULL)
-        {
-            ft_putstr(res[i]);
-            ft_putchar(',');
-            ft_putchar(' ');
-        }
-        else
-            ft_putstr(res[i]);
-        i++;
-    }
 }
