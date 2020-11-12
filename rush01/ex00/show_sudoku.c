@@ -2,13 +2,13 @@
 
 void show_sudoku(t_sudoku *par)
 {
-    int i = 1;
-    while (par[i].point)
+    int i = 0;
+    while (par[i].lines)
     {
         int j = 0;
-        while (par[i].point[j])
+        while (par[i].lines[j])
         {
-            ft_putchar(par[i].point[j]);
+            ft_putchar(par[i].lines[j]);
             ft_putchar(' ');
             j++;
         }

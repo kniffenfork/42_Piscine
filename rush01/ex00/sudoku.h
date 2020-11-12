@@ -11,16 +11,36 @@ typedef int t_bool;
 
 typedef struct sudoku
 {
-    char *point;
-    char **squares;
+    char       *lines;
+    char       *columns;
+    char       *count_of_parents;
+    char       **parents;
 
-} t_sudoku;
+}              t_sudoku;
 
-t_bool one_in_line(struct sudoku *sudoko, char el, int nb_line);
-struct	sudoku	*fill_sudoku_structure(int ac, char **av);
+typedef struct coord
+{
+    int        line;
+    int        column;
+}              coordinates;
+
+
+// operations with sudoku structure
+t_sudoku *fill_sudoku_structure(int ac, char **av);
 void show_sudoku(t_sudoku *par);
-char **ft_split_all(char *str);
-t_bool one_in_stolb(t_sudoku *sudoko, char el, int nb_stolb);
-t_bool one_in_square(t_sudoku *sudoku, char number, int coord_line, int coord_el_in_line);
+
+
+// check for uniqueness
+t_bool      one_in_line(t_sudoku *sudoku, char symbol_to_try, int line);
+t_bool      one_in_column(t_sudoku *sudoku, char symbol_to_try, int column);
+t_bool      one_in_square(t_sudoku *sudoku, char symbol_to_try, int line, int column);
+int *go_to_start_of_square(int line, int column);
+t_bool      is_unique(t_sudoku *sudoku, char symbol_to_try, int line, int column);
+
+
+// solve this fucking sudoku
+t_bool check_sudoku(t_sudoku *sudoku);
+int solve(t_sudoku *sudoku);
+
 
 #endif //LEARN_C_SUDOKU_H
