@@ -98,5 +98,5 @@ int solve(t_sudoku *sudoku)
         return solve_recursevily(sudoku, 0, 0);
     }
     else
-        return 0;
+        return  0;
 }

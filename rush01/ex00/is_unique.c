@@ -26,9 +26,9 @@ t_bool one_in_column(t_sudoku *sudoku, char symbol_to_try, int column)
     return TRUE;
 }
 
-int *go_to_start_of_square(int line, int column)
+int *return_start_of_square(int line, int column)
 {
-    int *answer = (int *)malloc(8);
+    int *answer = (int *)malloc(sizeof(int) * 2);
     int line_start = 3 * (line / 3);
     int column_start = 3 * (column / 3);
     answer[0] = line_start;
@@ -38,8 +38,8 @@ int *go_to_start_of_square(int line, int column)
 
 t_bool one_in_square(t_sudoku *sudoku, char symbol_to_try, int line, int column)
 {
-    line = (go_to_start_of_square(line, column))[0];
-    column = (go_to_start_of_square(line, column))[1];
+    line = (return_start_of_square(line, column))[0];
+    column = (return_start_of_square(line, column))[1];
 
 
     for (int i = line; i < (line + 3); i++)
@@ -57,8 +57,16 @@ t_bool one_in_square(t_sudoku *sudoku, char symbol_to_try, int line, int column)
 
 t_bool is_unique(t_sudoku *sudoku, char symbol_to_try, int line, int column)
 {
-    if (one_in_line(sudoku, symbol_to_try, line) && one_in_column(sudoku, symbol_to_try, column) && \
-    one_in_square(sudoku, symbol_to_try, line, column))
+    t_bool check1, check2, check3;
+
+    check1 = FALSE;
+    check2 = FALSE;
+    check3 = FALSE;
+
+    check1 = one_in_line(sudoku, symbol_to_try, line);
+    check2 = one_in_column(sudoku, symbol_to_try, column);
+    check3 = one_in_square(sudoku, symbol_to_try, line, column);
+    if (check1 && check2 && check3)
         return TRUE;
     else
         return FALSE;

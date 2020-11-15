@@ -17,7 +17,7 @@ t_sudoku *fill_sudoku_structure(int ac, char **av)
         sudoku[i].lines = malloc(10);
         sudoku[i].columns = malloc(10);
         sudoku[i].count_of_parents = malloc(10);
-        sudoku[i].lines = av[j];
+        sudoku[i].lines = av[i + 1];
         sudoku[i].parents = (char **)malloc(sizeof(char *) * 10);
         i++;
         j++;

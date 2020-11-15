@@ -2,9 +2,12 @@
 
 int main(int arc, char **argv)
 {
-    t_sudoku *ans = fill_sudoku_structure(arc, argv);
-    solve(ans);
-    show_sudoku(ans);
+    t_sudoku *sudoku = fill_sudoku_structure(arc, argv);
+    if (solve(sudoku)) {
+        show_sudoku(sudoku);
+    } else {
+        ft_putstr("non_valid sudoku\n");
+    }
 }
 
 
@@ -15,3 +18,5 @@ int main(int arc, char **argv)
 // ./sudoku "53..7...." "6..195..." ".98....6." "8...6...3" "4..8.3..1" "7...2...6" ".6....28." "...419..5" "....8..79"
 
 // ./sudoku "...1..23." "4..2..5.." "6.1...7.8" "..5..3.12" "..2.4.8.." "78.9..6.." "3.7...9.4" "..6..7..5" ".98..6..."
+
+// ./sudoku ".5...1.3." "36.7.94.." "..74..95." "..1.94..3" "59.....24" "6..28.5.." ".45..61.." "..39.5.82" ".2.1...4."

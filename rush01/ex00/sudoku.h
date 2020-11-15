@@ -16,7 +16,7 @@ typedef struct sudoku
     char       *count_of_parents;
     char       **parents;
 
-}              t_sudoku;
+}              t_sudoku;// this shit contains row and column with index i
 
 
 // operations with sudoku structure
@@ -28,7 +28,7 @@ void        show_sudoku(t_sudoku *par);
 t_bool      one_in_line(t_sudoku *sudoku, char symbol_to_try, int line);
 t_bool      one_in_column(t_sudoku *sudoku, char symbol_to_try, int column);
 t_bool      one_in_square(t_sudoku *sudoku, char symbol_to_try, int line, int column);
-int         *go_to_start_of_square(int line, int column);
+int         *return_start_of_square(int line, int column);
 t_bool      is_unique(t_sudoku *sudoku, char symbol_to_try, int line, int column);
 
 
