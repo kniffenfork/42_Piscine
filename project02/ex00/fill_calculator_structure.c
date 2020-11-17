@@ -18,11 +18,33 @@ t_calc *fill_calculator_structure(int ac, char **av)
     calc->expression_split = ft_split(expr, " ");
 
     int i = 0;
+    int k = 0;
+    char **prom = (char **)malloc(sizeof(char *) * ft_strlen(expr) + 1);
     while (calc->expression_split[i])
     {
+        if (is_in_string(calc->expression_split[i], "("))
+        {
+            prom[k] = "(";
+            k++;
+            prom[k] = ft_split(calc->expression_split[i], "(")[1];
+            k++;
+        }
+        else if (is_in_string(calc->expression_split[i], ")"))
+        {
+            prom[k] = ft_split(calc->expression_split[i], ")")[0];
+            k++;
+            prom[k] = ")";
+            k++;
+        }
+        else
+        {
+            prom[k] = calc->expression_split[i];
+            k++;
+        }
         i++;
     }
-
+    calc->prom = prom;
+    calc->expression_split = calc->prom;
     calc->size_of_splitted_expression = i;
 
     calc->polish_notation = (char **)malloc((calc->size_of_splitted_expression * sizeof(char *))+ 1);
