@@ -54,3 +54,48 @@ int ft_atoi(char *str)
         return (-1) * res;
     }
 }
+
+char *ft_num_to_str(int c)
+{
+    char *result;
+    if (c == 0)
+    {
+        result = "0";
+        return result;
+    }
+
+    int flag = 0;
+
+    if (c < 0)
+    {
+        flag = 1;
+        c *= -1;
+    }
+
+    int num = c;
+    int length_of_int = 0;
+    int k = 0;
+    int prom;
+
+    while (c != 0)
+    {
+        c /= 10;
+        length_of_int++;
+    }
+
+    result = (char *)malloc(length_of_int + 1);
+
+    if (flag == 1)
+    {
+        result[k] = '-';
+        k++;
+    }
+
+    for (int i = length_of_int - 1; i >= 0; i--)
+    {
+        prom = (num/(ft_power(10, i))) % 10;
+        result[k] = (prom + '0');
+        k++;
+    }
+    return result;
+}

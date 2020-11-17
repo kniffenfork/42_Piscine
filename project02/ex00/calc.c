@@ -1,7 +1,6 @@
 #include "calc.h"
 
 /*
-
 Рассматриваем поочередно каждый символ:
 1. Если этот символ - число (или переменная), то просто помещаем его в стек-ответ.
 2. Если символ - знак операции (+, -, *, / ), то проверяем приоритет операции.
@@ -19,7 +18,7 @@
  Если вся входная строка разобрана, а в стеке еще остаются знаки операций, извлекаем их из стека в выходную строку.
  */
 
-void            print_polish_notation(t_calc *expression)
+void             print_polish_notation(t_calc *expression)
 {
     int k = 0;
     while (expression->polish_notation[k])
@@ -30,7 +29,7 @@ void            print_polish_notation(t_calc *expression)
     }
 }
 
-int             get_priority_of_operation(char *operation)
+int              get_priority_of_operation(char *operation)
 {
     if (operation[0] == '+')
         return plus;
@@ -55,22 +54,25 @@ void             create_polish_notation(t_calc *expression)
 {
     Stack_t *operations = createStack();
     Stack_t *polish = createStack();
+    char *symbol_in_expr;
 
     int i = 0;
     while (expression->expression_split[i])
     {
-        if (is_digit(expression->expression_split[i]))
+        symbol_in_expr = expression->expression_split[i];
+
+        if (is_digit(symbol_in_expr))
         {
-            push(polish, expression->expression_split[i]);
+            push(polish, symbol_in_expr);
         }
         else
         {
-            if (expression->expression_split[i][0] == '(')
+            if (symbol_in_expr[0] == '(')
             {
                 push(operations, "(");
 
             }
-            else if (expression->expression_split[i][0] == ')')
+            else if (symbol_in_expr[0] == ')')
             {
                 while (peek(operations)[0] != '(')
                 {
@@ -80,21 +82,21 @@ void             create_polish_notation(t_calc *expression)
             }
             else
             {
-                if (operations->top == 0 || get_priority_of_operation(expression->expression_split[i]) > get_priority_of_operation(peek(operations)))
+                if (operations->top == 0 || get_priority_of_operation(symbol_in_expr) > get_priority_of_operation(peek(operations)))
                     push(operations, expression->expression_split[i]);
 
-                else if (get_priority_of_operation(peek(operations)) >= get_priority_of_operation(expression->expression_split[i]))
+                else if (get_priority_of_operation(peek(operations)) >= get_priority_of_operation(symbol_in_expr))
                 {
-                    while (get_priority_of_operation(peek(operations)) >= get_priority_of_operation(expression->expression_split[i]))
+                    while (get_priority_of_operation(peek(operations)) >= get_priority_of_operation(symbol_in_expr))
                     {
                         push(polish, pop(operations));
                         if (operations->top == 0)
                             break;
                     }
 
-                    if (operations->top == 0 || get_priority_of_operation(peek(operations)) < get_priority_of_operation(expression->expression_split[i]))
+                    if (operations->top == 0 || get_priority_of_operation(peek(operations)) < get_priority_of_operation(symbol_in_expr))
                     {
-                        push(operations, expression->expression_split[i]);
+                        push(operations, symbol_in_expr);
                     }
                 }
             }
@@ -117,51 +119,62 @@ void             create_polish_notation(t_calc *expression)
     }
 
     expression->size_of_polish = j;
+
+    deleteStack(&operations);
+    deleteStack(&polish);
 }
 
-void calculate_polish_notation(t_calc *expression)
+int             calculate_expression(t_calc *expression)
 {
+    create_polish_notation(expression);
     int i = expression->size_of_polish - 1;
     Stack_t *counting = createStack();
+    char *symbol_in_polish;
+
     while (i >= 0) // пробегаемся с конца стек-ответа (он же развернут)
     {
-        if (is_digit(expression->polish_notation[i]))
+        symbol_in_polish = expression->polish_notation[i];
+
+        if (is_digit(symbol_in_polish))
         {
-            push(counting, expression->polish_notation[i]);
+            push(counting, symbol_in_polish);
         }
-        else if (is_operation(expression->polish_notation[i]))
+        else if (is_operation(symbol_in_polish))
         {
+            char operation_in_polish = symbol_in_polish[0];
             int num_2 = ft_atoi(pop(counting));
             int num_1 = ft_atoi(pop(counting));
-            char *result_of_operation = malloc(100);
+            char *result_of_operation;
 
-            if (expression->polish_notation[i][0] == '+')
+            if (operation_in_polish == '+')
             {
-                result_of_operation[0] = ((num_1 + num_2) + '0');
+                result_of_operation = ft_num_to_str(num_1 + num_2);
                 push(counting, result_of_operation);
             }
-            else if (expression->polish_notation[i][0] == '-')
+            else if (operation_in_polish == '-')
             {
-                result_of_operation[0] = ((num_1 - num_2) + '0');
+                result_of_operation = ft_num_to_str(num_1 - num_2);
                 push(counting, result_of_operation);
             }
-            else if (expression->polish_notation[i][0] == '*')
+            else if (operation_in_polish == '*')
             {
-                result_of_operation[0] = ((num_1 * num_2) + '0');
+                result_of_operation = ft_num_to_str(num_1 * num_2);
                 push(counting, result_of_operation);
             }
-            else if (expression->polish_notation[i][0] == '/')
+            else if (operation_in_polish == '/')
             {
-                result_of_operation[0] = ((num_1 / num_2) + '0');
+                result_of_operation = ft_num_to_str(num_1 / num_2);
                 push(counting, result_of_operation);
             }
-            else if (expression->polish_notation[i][0] == '%')
+            else if (operation_in_polish == '%')
             {
-                result_of_operation[0] = ((num_1 % num_2) + '0');
+                result_of_operation = ft_num_to_str(num_1 % num_2);
                 push(counting, result_of_operation);
             }
         }
         i--;
     }
-    printStack(counting);
+    int res = ft_atoi(peek(counting));
+    deleteStack(&counting);
+    return res;
 }

@@ -31,14 +31,13 @@ typedef int t_bool;
 // structure of stack
 typedef char *T;
 
-typedef struct  Stack_tag
+typedef struct  Stack_tag // stack_of_chars;
 {
     T           *data;
     size_t      size;
     size_t      top;
 }               Stack_t;
 
-//
 
 // structure of calculator
 typedef struct calc
@@ -49,19 +48,17 @@ typedef struct calc
     int        size_of_polish;
 
 }              t_calc;
-//
 
+// useful functions
 t_calc          *fill_calculator_structure(int ac, char **av);
 char            **ft_split_whitespaces(char *str);
 char            **ft_split(char *str, char *charset);
-int             *length_of_words(char *str, char *sep);
-int             count_of_words(char *str, char *sep);
-int             ft_el_in_str(char *str, char symbol_in_str);
 t_bool          is_digit(char *symbol);
 t_bool          is_operation(char *symbol);
 t_bool          is_in_string(char *string, char *symbol);
 int             ft_atoi(char *str);
 void            print_polish_notation(t_calc *expression);
+char            *ft_num_to_str(int c);
 
 // operations with stack
 Stack_t*        createStack();
@@ -76,6 +73,6 @@ void            printStack(const Stack_t *stack);
 // calculation
 int             get_priority_of_operation(char *operation);
 void            create_polish_notation(t_calc *expression);
-void            calculate_polish_notation(t_calc *expression);
+int             calculate_expression(t_calc *expression);
 
 #endif //LEARN_C_CALC_H
