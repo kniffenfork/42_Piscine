@@ -4,48 +4,78 @@
 #include "/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h"
 #include <stdlib.h>
 
-#define TRUE 1
-#define FALSE 0
-#define STACK_MAX_SIZE 20
+// bool
+#define TRUE    1
+#define FALSE   0
+
+// for dinamic stack
+#define INIT_SIZE   10
+#define MULTIPLIER  2
 
 // for error tracking
-#define STACK_OVERFLOW  -100
-#define STACK_UNDERFLOW -101
+#define STACK_OVERFLOW      -100
+#define STACK_UNDERFLOW     -101
+#define OUT_OF_MEMORY       -102
+
+// priority of operations
+
+#define bracket     1
+#define plus        2
+#define minus       2
+#define multiply    3
+#define division    3
+#define reminder    3
 
 typedef int t_bool;
 
 // structure of stack
 typedef char *T;
 
-typedef struct Stack_tag
+typedef struct  Stack_tag
 {
-    T data[STACK_MAX_SIZE];
-    size_t size;
-} Stack_t;
+    T           *data;
+    size_t      size;
+    size_t      top;
+}               Stack_t;
+
 //
 
 // structure of calculator
 typedef struct calc
 {
-    char       **symbol; // symbol[i] -- строка элемента, например "42", symbol[i][0] == '4'
-    int        size_of_expression;
-    int        prior_of_plus;
-    int        prior_of_minus;
-    int        prior_of_multiplication;
-    int        prior_of_division;
-    int        prior_of_remainder;
-
+    char       **expression_split;
+    char       **polish_notation;
+    int        size_of_splitted_expression;
+    int        size_of_polish;
 
 }              t_calc;
 //
 
-t_calc      *fill_calculator_structure(int ac, char **av);
-char        **ft_split_whitespaces(char *str);
+t_calc          *fill_calculator_structure(int ac, char **av);
+char            **ft_split_whitespaces(char *str);
+char            **ft_split(char *str, char *charset);
+int             *length_of_words(char *str, char *sep);
+int             count_of_words(char *str, char *sep);
+int             ft_el_in_str(char *str, char symbol_in_str);
+t_bool          is_digit(char *symbol);
+t_bool          is_operation(char *symbol);
+t_bool          is_in_string(char *string, char *symbol);
+int             ft_atoi(char *str);
+void            print_polish_notation(t_calc *expression);
 
 // operations with stack
-void push(Stack_t *stack, char *value);
-T pop(Stack_t *stack);
-T peek(const Stack_t *stack);
-void printStackValue(char *value);
-void printStack(const Stack_t *stack, void (*printStackValue)(const T));
+Stack_t*        createStack();
+void            deleteStack(Stack_t **stack);
+void            resize(Stack_t *stack);
+void            push(Stack_t *stack, T value);
+T               pop(Stack_t *stack);
+T               peek(const Stack_t *stack);
+void            implode(Stack_t *stack);
+void            printStack(const Stack_t *stack);
+
+// calculation
+int             get_priority_of_operation(char *operation);
+void            create_polish_notation(t_calc *expression);
+void            calculate_polish_notation(t_calc *expression);
+
 #endif //LEARN_C_CALC_H

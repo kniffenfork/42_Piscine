@@ -1,4 +1,4 @@
-SRC = main.c calc.c fill_calculator_structure.c ft_split_whitespaces.c operations_with_stack.c
+SRC = main.c calc.c fill_calculator_structure.c  operations_with_stack.c ft_split.c functions.c
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
 OBJECTS=$(SRC:.c=.o)
