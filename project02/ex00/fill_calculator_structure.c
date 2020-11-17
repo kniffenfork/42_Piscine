@@ -1,6 +1,5 @@
 #include "calc.h"
 
-t_bool is_digit(char *symbol);
 
 t_calc *fill_calculator_structure(int ac, char **av)
 {
