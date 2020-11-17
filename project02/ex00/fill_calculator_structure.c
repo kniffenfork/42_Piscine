@@ -20,6 +20,7 @@ t_calc *fill_calculator_structure(int ac, char **av)
     int i = 0;
     int k = 0;
     char **prom = (char **)malloc(sizeof(char *) * ft_strlen(expr) + 1);
+
     while (calc->expression_split[i])
     {
         char *symbol = calc->expression_split[i];
