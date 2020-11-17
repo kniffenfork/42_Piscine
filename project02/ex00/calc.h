@@ -44,7 +44,6 @@ typedef struct calc
 {
     char       **expression_split;
     char       **polish_notation;
-    char       **prom;
     int        size_of_splitted_expression;
     int        size_of_polish;
 
