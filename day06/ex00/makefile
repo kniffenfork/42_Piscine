@@ -1,16 +1,15 @@
-SRC = main.c calc.c fill_calculator_structure.c operations_with_stack.c ft_split.c functions.c
+SRC = main.c fill_sudoku_structure.c is_unique.c show_sudoku.c solve_sudoku.c
 FLAGS = -Wall -Wextra -Werror
-CC = @gcc
+CC = gcc
 OBJECTS=$(SRC:.c=.o)
-EXECUTABLE = calc
+EXECUTABLE = sudoku
 LIB = /Users/user/Desktop/Informatiks/learn_C/day06/ex00/lib/libft.a
 
 all: $(SRC) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(FLAGS) $(OBJECTS) $(LIB) -o $@
-	@echo "BUILT SUCCESFULLY COMPLETED"
 
 clean:
-	@rm -rf *.o $(EXECUTABLE)
-	@echo "ALL IS CLEANED"
+	rm -rf *.o $(EXECUTABLE)
+
