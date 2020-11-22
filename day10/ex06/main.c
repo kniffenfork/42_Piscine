@@ -7,6 +7,6 @@ int main(int ac, char **av)
     if (check_for_possibility(ac, av) != error_number_of_arguments)
     {
         ft_putnbr(result);
-        ft_putchar('\n');
     }
+    ft_putchar('\n');
 }

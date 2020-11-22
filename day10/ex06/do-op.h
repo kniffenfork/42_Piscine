@@ -12,9 +12,8 @@ int         ft_do_op(int ac, char **av);
 int         make_correct_values(int ac, char **av);
 
 // functions
-int             ft_atoi(char *str);
-int             is_in_string(char *string, char symbol);
-int             is_digit(char symbol);
-int             is_operation(char symbol);
+int             ft_is_in_string(char *string, char symbol);
+int             ft_is_digit(char symbol);
+int             ft_is_operation(char symbol);
 
 #endif //LEARN_C_DO_OP_H

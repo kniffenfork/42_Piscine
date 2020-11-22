@@ -1,5 +1,28 @@
-#include "do-op.h"
+int ft_power(int n, int k);
 
+int ft_strlen(char *str);
+
+int             is_in_string(char *string, char symbol)
+{
+    int i = 0;
+    while (string[i])
+    {
+        if (symbol == string[i])
+            return 1;
+        i++;
+    }
+    return 0;
+}
+
+int             is_digit(char symbol)
+{
+    char *nums = "0123456789";
+
+    if (is_in_string(nums, symbol))
+        return 1;
+
+    return 0;
+}
 
 int             length_of_ints_int_str(char *str)
 {
@@ -42,34 +65,5 @@ int             ft_atoi(char *str)
     }
 }
 
-int             is_in_string(char *string, char symbol)
-{
-    int i = 0;
-    while (string[i])
-    {
-        if (symbol == string[i])
-            return 1;
-        i++;
-    }
-    return 0;
-}
 
-int             is_digit(char symbol)
-{
-    char *nums = "0123456789";
 
-    if (is_in_string(nums, symbol))
-        return 1;
-
-    return 0;
-}
-
-int             is_operation(char symbol)
-{
-    char *operators = "+-*/%";
-
-    if (is_in_string(operators, symbol))
-        return error_number_of_arguments;
-
-    return 0;
-}

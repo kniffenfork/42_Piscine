@@ -1,15 +1,27 @@
-SRC = main.c fill_sudoku_structure.c is_unique.c show_sudoku.c solve_sudoku.c
-FLAGS = -Wall -Wextra -Werror
-CC = gcc
-OBJECTS=$(SRC:.c=.o)
-EXECUTABLE = sudoku
-LIB = /Users/user/Desktop/Informatiks/learn_C/day06/ex00/lib/libft.a
+NAME = libft.a
+SRCS = srcs/
+INCLUDES = include/
+FUNCTIONS = ft_atoi ft_power ft_putchar ft_putnbr ft_putstr ft_split_whitespaces ft_sqrt ft_str_is_alpha \
+			ft_str_is_lowercase ft_str_is_numeric ft_str_is_printable ft_str_is_uppercase ft_strcapitalize \
+			ft_strcat ft_strcmp ft_strcpy ft_strlen ft_strlowcase ft_strncat ft_strncpy ft_strrev \
+			ft_strstr ft_strupcase ft_swap
+BINS = $(patsubst %, %.o, $(FUNCTIONS))
 
-all: $(SRC) $(EXECUTABLE)
+.PHONY: clean fclean re all
 
-$(EXECUTABLE): $(OBJECTS)
-	$(CC) $(FLAGS) $(OBJECTS) $(LIB) -o $@
+all: $(NAME)
+
+$(BINS):
+	@gcc -Wall -Werror -Wextra -c $(patsubst %.o, $(SRCS)%.c, $@) -I $(INCLUDES)
+
+$(NAME): $(BINS)
+	@ar rc $(NAME) $(BINS);
+	@ranlib $(NAME);
 
 clean:
-	rm -rf *.o $(EXECUTABLE)
+	@rm -f $(BINS)
 
+fclean: clean
+	@rm -f $(NAME)
+
+re: fclean all

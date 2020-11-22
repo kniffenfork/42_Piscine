@@ -1,4 +1,4 @@
-SRC = do-op.c ft.c main.c
+SRC = do-op.c main.c
 FLAGS = -Wall -Wextra -Werror
 CC = @gcc
 OBJECTS=$(SRC:.c=.o)

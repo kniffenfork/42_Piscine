@@ -1,3 +1,5 @@
+#include "../../day06/ex00/include/libft.h"
+
 void	ft_advanced_sort_wordtab(char **tab, int (*cmp)(char *, char *))
 {
     int		i;
@@ -20,4 +22,9 @@ void	ft_advanced_sort_wordtab(char **tab, int (*cmp)(char *, char *))
         }
         i++;
     }
+}
+
+int main()
+{
+    ft_putnbr(ft_atoi("250tomato"));
 }
