@@ -7,9 +7,9 @@
 
 // main do-op tools
 
-int         check_for_possibility(int ac, char **av);
-int         ft_do_op(int ac, char **av);
-int         make_correct_values(int ac, char **av);
+int             check_for_possibility(int ac, char **av);
+int             ft_do_op(int ac, char **av);
+int             make_correct_values(int ac, char **av);
 
 // functions
 int             ft_is_in_string(char *string, char symbol);
