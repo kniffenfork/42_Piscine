@@ -84,6 +84,7 @@ void            ft_print_numerize_lines(char *file_name)
         ft_putchar(*buff);
         flag_for_start = 1;
     }
+    close(file);
 }
 
 void            ft_print_numerize_all_lines(char *file_name)
@@ -132,6 +133,7 @@ void            ft_print_numerize_all_lines(char *file_name)
         ft_putchar(*buff);
         flag_for_start = 1;
     }
+    close(file);
 }
 
 void            show_dollar_at_the_end_of_line(char *file_name)
@@ -147,6 +149,7 @@ void            show_dollar_at_the_end_of_line(char *file_name)
             ft_putchar('$');
         ft_putchar(*buff);
     }
+    close(file);
 }
 
 void            delete_repeated_empty_lines(char *file_name)
@@ -181,6 +184,7 @@ void            delete_repeated_empty_lines(char *file_name)
 
         ft_putchar(*buff);
     }
+    close(file);
 }
 
 void            view_tabulation(char *file_name)
@@ -199,4 +203,5 @@ void            view_tabulation(char *file_name)
         }
         ft_putchar(*buff);
     }
+    close(file);
 }
