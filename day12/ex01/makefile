@@ -1,4 +1,4 @@
-SRC = main.c operations_with_file.c ft_cat.c ft.c
+SRC = main.c operations_with_file.c ft_cat.c
 FLAGS = -Wall -Wextra -Werror
 CC = @gcc
 OBJECTS=$(SRC:.c=.o)
