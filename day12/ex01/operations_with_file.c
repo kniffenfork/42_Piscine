@@ -23,7 +23,11 @@ void            ft_display_file(char *file_name)
 }
 
 
-void            ft_display_several_files(int ac, char **av)
+void            ft_display_several_files(int ac, char **av)// я хуй знает, проверял ты это или нет, но подозреваю
+//															что эта хуйня работает долго, ибо av не закончится нулем
+// 															а начнет выдавать рандомную хуйню вместо аргументов когда
+//															аргументы закончатся. как леволибералы кстати
+//															ну и она не используется кстати
 {
     int i = 1;
 
@@ -103,6 +107,7 @@ void            ft_print_numerize_all_lines(char *file_name)
         if (flag == 1 || flag_for_start == 0)
         {
             // увлекательный подгон пробелов для выравнивания номера строк
+            // вынеси свой подгон в отдельную функцию, раз уж используешь несколько раз
             ft_putstr(" ");
             if (num_of_line < 10000)
                 ft_putstr(" ");
