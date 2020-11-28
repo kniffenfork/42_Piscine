@@ -15,7 +15,6 @@ typedef struct          s_btree
 
     struct s_btree      *left;
     struct s_btree      *right;
-    struct s_btree      *parent; // похуй что в задании нет -- хочу чтоб предок был
     void                *item;
 
 }                       t_btree;
