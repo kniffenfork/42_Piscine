@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day11/ft_list.h"
+#include "../ft_list.h"
 
 void            ft_list_sort(t_list **head, int (*cmp)())
 {

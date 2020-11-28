@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day11/ft_list.h"
+#include "../ft_list.h"
 
 t_list          *ft_list_find(t_list *head, void *data_ref, int (*cmp)())
 {

@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day11/ft_list.h"
+#include "../ft_list.h"
 
 
 t_list          *ft_list_at(t_list *head, unsigned int nbr)

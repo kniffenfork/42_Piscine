@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day11/ft_list.h"
+#include "../ft_list.h"
 
 int             ft_list_len(t_list *head)
 {

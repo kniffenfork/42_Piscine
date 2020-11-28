@@ -1,6 +1,3 @@
-#include "../../day06/ex00/include/libft.h"
-
-
 int         ascii_sum(char *str)
 {
     int i = 0;

@@ -1,4 +1,3 @@
-#include "../../day06/ex00/include/libft.h"
 #include <stdlib.h>
 
 int *ft_range(int min, int max)

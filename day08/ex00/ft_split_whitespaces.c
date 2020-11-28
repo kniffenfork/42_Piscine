@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "../../day06/ex00/include/libft.h"
 // Извени за этот фильм ужасов из мира асимптотики -- учился так маллоком пользоваться ))00 (охуел чот пока писал)
-#include <stdio.h>
-
+\
 int count_of_words(char *str)
 {
     int flag = 0;

@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day11/ft_list.h"
+#include "../ft_list.h"
 
 void            ft_list_foreach_if(t_list *head, void (*f)(void *), void *data_ref, int (*cmp()))
 {

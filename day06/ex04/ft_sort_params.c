@@ -1,4 +1,4 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day06/ex00/include/libft.h"
+#include "../../day06/ex00/include/libft.h"
 
 int ascii_sum(char *arr)
 {
