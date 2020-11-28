@@ -1,12 +1,13 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day13/ft_btree.h"
+#include "../ft_btree.h"
 
-int             btree_level_count(t_btree *root)
+int             btree_level_count(t_btree *root)// код выглядит впорядке, но я всегда рекурсию хуево читаю, так что
+//													надеюсь, что оно работает))0)0
 {
     if (root == NULL)
         return 0;
 
-    int left = 0;
-    int right = 0;
+    int left;
+    int right; // clion сам подчеркивает, что значение 0 не используются
 
     left = btree_level_count(root->left);
     right = btree_level_count(root->right);

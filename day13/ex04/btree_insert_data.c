@@ -1,8 +1,9 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day13/ft_btree.h"
+#include "../ft_btree.h"
 
-void	btree_insert_data(t_btree **root, void *item, int (*cmp)())
+void	btree_insert_data(t_btree **root, void *item, int (*cmp)())//вроде ок
 {
-    if (!*root)
+    //if (!*root) пиши нормально, а то будешь как борщехлебы на плюсах за еду работать
+    if ((*root) == null)
         *root = btree_create_node(item);
     else if (cmp((*root)->item, item) > 0)
         btree_insert_data(&((*root)->left), item, cmp);

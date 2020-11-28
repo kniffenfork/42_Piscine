@@ -1,6 +1,6 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day13/ft_btree.h"
+#include "../ft_btree.h"
 
-void            *btree_search_item(t_btree *root, void *data_ref, int (*cmpf)())
+void            *btree_search_item(t_btree *root, void *data_ref, int (*cmpf)())//вроде ок
 {
     if (root == NULL)
         return NULL;

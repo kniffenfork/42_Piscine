@@ -1,7 +1,8 @@
-#include "/Users/user/Desktop/Informatiks/learn_C/day13/ft_btree.h"
+#include "../ft_btree.h"
 
 
 void            btree_apply_suffix(t_btree *root, void (*applyf)(void *)) // уфф
+//																		     вроде ок
 {
     if (root->left)
         btree_apply_prefix(root->left, applyf);
