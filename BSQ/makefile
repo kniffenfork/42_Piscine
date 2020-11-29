@@ -1,24 +1,23 @@
-SRCS = main.c read_data/ ft/ bsq_solver/
-EXECUTABLE = BSQ
-FUNCTIONS =
-CC = @gcc 
+SRC = testing.c  ./read_data/define_type_of_input.c ./ft/ft.c
+SRC_test = ./read_data/define_type_of_input.c ./ft/ft.c
 FLAGS = -Wall -Wextra -Werror
-BINS = $(patsubst %, %.o, $(FUNCTIONS))
-OBJECTS = $(BINS) main.c
+CC = @gcc
+OBJECTS=$(SRC:.c=.o)
+TEST=$(SRC_test:.c=.o)
+EXECUTABLE = BSQ
+LIB = ../day06/ex00/lib/libft.a
 
-.PHONY clean all
+all: $(SRC) $(EXECUTABLE)
 
-all: $(SRCS) $(EXECUTABLE)
+.PHONY: clean all
 
-$(BINS): $(SRCS)
-	$(CC) $(FLAGS) -c $(patsubst %.o, $(SRCS)%.c, $@)
-
-$(EXECUTABLE): $(BINS)
-	@echo "Building communism..."
-	$(CC) $(FLAGS) $(OBJECTS) -o $@
-	@echo "Built completed successfully"
+$(EXECUTABLE): $(OBJECTS)
+	@echo "Buiding communism..."
+	$(CC) $(FLAGS) $(OBJECTS) $(LIB) -o $@
+	@echo "Buit successfully completed!"
 
 clean:
-	@echo "Processing cleaning..."
+	@echo "Cleaning..."
 	@rm -rf *.o $(EXECUTABLE)
-	@echo "Cleaning successfully completed!"
+	@rm f *.o $(TEST)
+	@echo "All is cleaned!"
