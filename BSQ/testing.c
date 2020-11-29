@@ -1,12 +1,18 @@
-#include "./read_data/read_data.h"
 #include "./ft/ft.h"
+#include "./read_data/read_data.h"
+
 
 int main(int ac, char **av)
 {
-    if (define_type_of_input(ac, av) == INPUT_IS_ARGUMENTS_IN_CMDLINE)
+    t_data *data = read_data_from_cmdline(ac, av);
+    ft_putnbr(data->count_of_data_lines[0]);
+    ft_putchar('\n');
+    int i = 0;
+    while (data->data_lines[0][i])
     {
-        ft_putstr("INPUT IS ARGUMENTS IN COMMAND LINE\n");
+        ft_putstr(data->data_lines[0][i]);
+        ft_putchar('\n');
+        i++;
     }
-    else
-        ft_putstr("INPUT IS FILES\n");
+
 }

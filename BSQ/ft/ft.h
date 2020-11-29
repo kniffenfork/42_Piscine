@@ -5,8 +5,9 @@
 #include "../../day06/ex00/include/libft.h"
 
 // functions:
-int                 match(char *s1, char *s2);
-int                 str_comparison(char *s1, char *s2);
+int             FT_match(char *s1, char *s2);
+int             FT_strcmp(char *s1, char *s2);
+char            **FT_split(char *str, char *charset);
 
 #endif
 

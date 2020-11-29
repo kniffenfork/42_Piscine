@@ -37,9 +37,7 @@ int             ft_strlen(char *str);
 
 char            *ft_strncat(char *dest, char *src, int nb);
 
-int             ft_strncmp(char *s1, char *s2, unsigned int n);
-
-int             *ft_strncpy(char *dest, char *src, unsigned int n);
+char            *ft_strncpy(char *dest, char *src, unsigned int n);
 
 char            *ft_strrev(char str[]);
 

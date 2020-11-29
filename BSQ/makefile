@@ -1,5 +1,5 @@
-SRC = testing.c  ./read_data/define_type_of_input.c ./ft/ft.c
-SRC_test = ./read_data/define_type_of_input.c ./ft/ft.c
+SRC = testing.c  ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c ./read_data/read_data.c
+SRC_test = ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c ./read_data/read_data.c
 FLAGS = -Wall -Wextra -Werror
 CC = @gcc
 OBJECTS=$(SRC:.c=.o)
@@ -19,5 +19,5 @@ $(EXECUTABLE): $(OBJECTS)
 clean:
 	@echo "Cleaning..."
 	@rm -rf *.o $(EXECUTABLE)
-	@rm f *.o $(TEST)
+	@rm -f *.o $(TEST)
 	@echo "All is cleaned!"

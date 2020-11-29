@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "../../day06/ex00/include/libft.h"
+#include "ft.h"
 
-int ft_el_in_str(char *str, char symbol_in_str)// el хоть назови по нормальному, symbol in str например
+int ft_el_in_str(char *str, char symbol_in_str)
 {
     for (int i = 0; i < ft_strlen(str); i++)
     {
@@ -71,7 +69,7 @@ int *length_of_words(char *str, char *sep)
     return result;
 }
 
-char **ft_split(char *str, char *charset)
+char **FT_split(char *str, char *charset)
 {
     char **result = (char **)malloc(sizeof(char *) * count_of_words(str, charset) + 1);
     int *arr_of_length = length_of_words(str, charset);
@@ -107,25 +105,4 @@ char **ft_split(char *str, char *charset)
         }
     }
     return result;
-}
-
-
-
-int main()
-{
-    char *str = "Zalupa zhopa vo vremya semyaizverzhenia, slilis' voedino..."; //глубоко
-    char **res = ft_split(str, " ");
-    int i = 0;
-    while (res[i] != NULL)
-    {
-        if (res[i + 1] != NULL)
-        {
-            ft_putstr(res[i]);
-            ft_putchar(',');
-            ft_putchar(' ');
-        }
-        else
-            ft_putstr(res[i]);
-        i++;
-    }
 }
