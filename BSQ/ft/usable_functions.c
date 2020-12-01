@@ -28,3 +28,10 @@ int             FT_str_cmp(char *s1, char *s2)
     return 0;
 }
 
+int             FT_is_digit(char symbol)
+{
+    if (symbol >= 48 && symbol <= 57)
+        return 1;
+    else
+        return 0;
+}

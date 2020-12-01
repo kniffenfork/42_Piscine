@@ -12,19 +12,26 @@
 
 
 #include "../ft/ft.h"
+#include <unistd.h>
+#include <fcntl.h>
 
 typedef struct              data_array
 
 {
     char                    ***data_lines;
     int                     *count_of_data_lines;
+    char                    *obstacles;
+    char                    *symbols_to_solve;
+    char                    *empty_cell;
 
 }                           t_data;
 
+
 // functions:
 int             define_type_of_input(int ac, char **av);
-
-t_data              *read_data_from_cmdline(int ac, char **av);
+t_data          *create_data_array(int ac, char **av);
+t_data          *read_data_from_cmdline(int ac, char **av);
+void            Print_Data(t_data *data);
 
 
 #endif //LEARN_C_READ_DATA_H
