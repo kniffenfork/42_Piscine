@@ -28,10 +28,14 @@ typedef struct              data_array
 
 
 // functions:
-int             define_type_of_input(int ac, char **av);
-t_data          *create_data_array(int ac, char **av);
-t_data          *read_data_from_cmdline(int ac, char **av);
-void            Print_Data(t_data *data);
+int                 define_type_of_input(int ac, char **av);
+t_data              *read_data_from_files(int ac, char **av); // я бы эту хуйню разбил -- да тогда придется по файлу 2 раза пробегаться
+t_data              *create_data_array(int ac, char **av);
+t_data              *CMD_read_data(int ac, char **av);
+void                Print_Data(t_data *data);
+t_data              *CMD_get_map_description(int ac, char **av);
+
+t_data              *FILES_get_map_description(int ac, char **av);
 
 
 #endif //LEARN_C_READ_DATA_H
