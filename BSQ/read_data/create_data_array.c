@@ -3,7 +3,7 @@
 t_data          *create_data_array(int ac, char **av)
 {
     if (define_type_of_input(ac, av) == INPUT_IS_FILES)
-        return read_data_from_files(ac, av);
+        return FILES_read_data(ac, av);
     else
         return CMD_read_data(ac, av);
 }

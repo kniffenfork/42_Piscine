@@ -36,6 +36,8 @@ void                Print_Data(t_data *data);
 t_data              *CMD_get_map_description(int ac, char **av);
 
 t_data              *FILES_get_map_description(int ac, char **av);
+t_data              *FILES_read_data(int ac, char **av);
 
+void             FILES_allocate_memory_for_DataStructure(t_data *data, int ac, char **av);
 
 #endif //LEARN_C_READ_DATA_H

@@ -31,11 +31,12 @@ void test_data_filling(t_data *data, int num_of_files)
 }
 int main(int ac, char **av)
 {
-
+    /*
     t_data *data = FILES_get_map_description(ac, av);
-    test_data_filling(data, 3);
-/*
-t_data *data = create_data_array(ac, av);
-Print_Data(data);
- */
+    test_data_filling(data, 1);
+    ft_putchar('\n');
+    ft_putstr(data->data_lines[0][0]);
+     */
+    t_data *data = FILES_read_data(ac, av);
+    ft_putnbr(data->count_of_data_lines[0]);
 }

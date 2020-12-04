@@ -13,16 +13,48 @@ void                 FILES_deliver_obstacles_to_the_structure_with_allocating(t_
                                                                             char obstacle, char symbol_to_solve)
 {
     int position_in_arr = current_file - 1;
+
     data->empty_cell[position_in_arr] = empty_cell;
-    //data->empty_cell[current_file + 1] = '\0';
 
     data->count_of_data_lines[position_in_arr] = count_of_lines;
 
     data->symbols_to_solve[position_in_arr] = symbol_to_solve;
-    //data->symbols_to_solve[current_file + 1] = '\0';
 
     data->obstacles[position_in_arr] = obstacle;
-    //data->obstacles[current_file + 1] = '\0';
+}
+
+void                FILES_make_the_end_of_DataArrays_in_struct(t_data *data, int current_position)
+{
+    int position_in_arr = current_position - 1;
+
+    data->empty_cell[position_in_arr] = '\0';
+
+    data->symbols_to_solve[position_in_arr] = '\0';
+
+    data->obstacles[position_in_arr] = '\0';
+}
+
+void             FILES_allocate_memory_for_DataStructure(t_data *data, int ac, char **av)
+{
+    //ft_putchar('1');
+    int i = 1;
+    int k = 0;
+    int j;
+    int count_of_lines_in_file;
+    while (i < ac)
+    {
+        j = 0;
+        count_of_lines_in_file = data->count_of_data_lines[k];
+        data->data_lines[k] = (char **) malloc(sizeof(char *) * count_of_lines_in_file + 1);
+
+        while (j < (count_of_lines_in_file))
+        {
+            data->data_lines[k][j] = (char *)malloc(count_of_lines_in_file + 1);
+            j++;
+        }
+        k++;
+        i++;
+    }
 }
 
 t_data              *FILES_get_map_description(int ac, char **av)
@@ -45,7 +77,6 @@ t_data              *FILES_get_map_description(int ac, char **av)
     allocate_obstacles(data_array, ac);
 
     int current_file = 1;
-    int file_pos_in_arr = 0;
 
     while (av[current_file])
     {
@@ -78,6 +109,7 @@ t_data              *FILES_get_map_description(int ac, char **av)
 
            FILES_deliver_obstacles_to_the_structure_with_allocating(data_array, ac, current_file, count_of_lines,
                                                                     empty_cell, obstacle, symbol_to_solve);
+           FILES_allocate_memory_for_DataStructure(data_array, ac, av);
         }
         else
         {
@@ -86,9 +118,57 @@ t_data              *FILES_get_map_description(int ac, char **av)
         close(file);
         current_file++;
     }
+    FILES_make_the_end_of_DataArrays_in_struct(data_array, current_file);
     return data_array;
 }
 
+
+t_data              *FILES_read_data(int ac, char **av)
+{
+    char            *file_name;
+    t_data *data_array = FILES_get_map_description(ac, av);
+    int             current_file = 1;
+    int             position_in_arr = 0;
+    while (av[current_file])
+    {
+        file_name = av[current_file];
+        int file = open(file_name, O_RDONLY);
+        char buff[1];
+        ft_putstr(file_name);
+        if (file > 0)
+        {
+            int line_counting = 0;
+            int flag_to_detect_the_end_of_first_line = 0;
+            int k = 0;
+            // сначала проскипаем первую строку
+            while (read(file, buff, sizeof(buff)))
+            {
+                if (flag_to_detect_the_end_of_first_line == 0)
+                {
+                    if (*buff == '\n')
+                        flag_to_detect_the_end_of_first_line = 1;
+                }
+
+                else if (*buff == '\n')
+                {
+                    line_counting++;
+                }
+
+                else
+                {
+                    data_array->data_lines[position_in_arr][line_counting][k] = *buff;
+                    k++;
+                }
+            }
+        }
+        close(file);
+        position_in_arr++;
+        current_file++;
+    }
+    return data_array;
+}
+
+/*
 //TODO: сделать аналогично коммандной строке заполнение структуры пустых заполненных ячеек
 t_data              *read_data_from_files(int ac, char **av) // я бы эту хуйню разбил -- да тогда придется по файлу 2 раза пробегаться
 {
@@ -141,5 +221,5 @@ t_data              *read_data_from_files(int ac, char **av) // я бы эту �
     }
     return data_array;
 }
-
+*/
 //TODO: запилить чтобы в структуре тип ячеек хранился

@@ -71,7 +71,7 @@ t_data              *CMD_allocate_memory_for_DataStructure(int ac, char **av)
     int i = 0;
     while (i < data_array->count_of_data_lines[0])
     {
-        data_array->data_lines[0][i] = malloc(5);
+        data_array->data_lines[0][i] = (char *)malloc( data_array->count_of_data_lines[0] + 1);
         i++;
     }
 
