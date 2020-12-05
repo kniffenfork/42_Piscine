@@ -9,7 +9,7 @@ t_data          *allocate_basic_tools(int ac)
     data->data_lines = (char ***)malloc(sizeof(char **) * count_of_files + 1);
     data->solve_helper = (int ***)malloc(sizeof(int **) * count_of_files + 1);
 
-    data->count_of_data_lines = (int *)malloc(sizeof(int) * count_of_files + 1);
+    data->count_of_data_lines = (int *)malloc(sizeof(int) * count_of_files);
 
     data->obstacles = (char *)malloc(count_of_files + 1);
     data->symbols_to_solve = (char *)malloc(count_of_files + 1);
@@ -18,16 +18,16 @@ t_data          *allocate_basic_tools(int ac)
     return data;
 }
 
-void          fill_solver_helper(t_data *data, int CurrentFile, int current_line, int counter, char *buff)
+void          fill_solver_helper(t_data *data, int CurrentFile, int current_line, int counter, char buff)
 {
     char obstacle = data->obstacles[CurrentFile];
     char empty_cell = data->empty_cell[CurrentFile];
 
-    if (*buff == obstacle)
+    if (buff == obstacle)
     {
         data->solve_helper[CurrentFile][current_line][counter] = 0;
     }
-    else if (*buff == empty_cell)
+    else
         data->solve_helper[CurrentFile][current_line][counter] = 1;
 }
 
@@ -96,7 +96,7 @@ t_data          *FILES_read_data(int ac, char **av)
                     else
                     {
                         data->data_lines[CurrentFile][current_line][counter] = *buff;
-                        fill_solver_helper(data, CurrentFile, current_line, counter, buff);
+                        fill_solver_helper(data, CurrentFile, current_line, counter, *buff);
                     }
                 }
                 counter++;
