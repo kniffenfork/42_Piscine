@@ -1,6 +1,6 @@
-SRC = testing.c  ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c \
+SRC = testing.c  ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c ./bsq_solver/bsq_solver.c\
 	  ./read_data/read_data_CMDline.c ./read_data/create_data_array.c ./read_data/read_data_FILES.c
-SRC_test = ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c \
+SRC_test = ./read_data/define_type_of_input.c ./ft/usable_functions.c ./ft/split.c ./bsq_solver/bsq_solver.c\
 		   ./read_data/read_data_CMDline.c ./read_data/create_data_array.c ./read_data/read_data_FILES.c
 FLAGS = -Wall -Wextra -Werror
 CC = @gcc

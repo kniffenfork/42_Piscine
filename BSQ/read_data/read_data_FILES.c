@@ -7,6 +7,7 @@ t_data          *allocate_basic_tools(int ac)
     t_data *data = (t_data *)malloc(sizeof(t_data));
 
     data->data_lines = (char ***)malloc(sizeof(char **) * count_of_files + 1);
+
     data->solve_helper = (int ***)malloc(sizeof(int **) * count_of_files + 1);
 
     data->count_of_data_lines = (int *)malloc(sizeof(int) * count_of_files);
@@ -62,8 +63,10 @@ t_data          *FILES_read_data(int ac, char **av)
                     {
                         data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * data->count_of_data_lines[CurrentFile]);
                         data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile]);
-                        data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char ));
-                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char ));
+
+                        data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
+                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int));
+
                         flag_to_allocate_memory = 1;
                         counter = 0;
                         continue;
@@ -90,7 +93,7 @@ t_data          *FILES_read_data(int ac, char **av)
                         current_line++;
                         counter = 0;
                         data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
-                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
+                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int));
                         continue;
                     }
                     else
@@ -105,5 +108,6 @@ t_data          *FILES_read_data(int ac, char **av)
         Position_in_av++;
         CurrentFile++;
     }
+    data->data_lines[CurrentFile] = NULL;
     return data;
 }

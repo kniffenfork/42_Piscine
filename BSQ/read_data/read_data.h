@@ -21,9 +21,11 @@ typedef struct              data_array
     char                    ***data_lines;
     int                     ***solve_helper;
     int                     *count_of_data_lines;
+    int                     *Count_of_files;
     char                    *obstacles;
     char                    *symbols_to_solve;
     char                    *empty_cell;
+
 
 }                           t_data;
 

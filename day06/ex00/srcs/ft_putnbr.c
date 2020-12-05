@@ -9,7 +9,7 @@ void ft_putnbr(int c)
     if (c == 0)
     {
         ft_putchar(c + '0');
-        exit(0);
+        return;
     }
 
     int flag = 0;
