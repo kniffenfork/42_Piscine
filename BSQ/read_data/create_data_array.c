@@ -10,13 +10,19 @@ t_data          *create_data_array(int ac, char **av)
 
 void           Print_Data(t_data *data)
 {
-    ft_putnbr(data->count_of_data_lines[0]);
-    ft_putchar('\n');
+    //ft_putnbr(data->count_of_data_lines[0]);
+    //ft_putchar('\n');
     int i = 0;
-    while (data->data_lines[0][i])
+    int j = 0;
+    while (data->data_lines[i])
     {
-        ft_putstr(data->data_lines[0][i]);
-        ft_putchar('\n');
+        while (data->data_lines[i][j])
+        {
+            ft_putstr(data->data_lines[i][j]);
+            ft_putchar('\n');
+            j++;
+        }
         i++;
     }
+    ft_putchar('\n');
 }

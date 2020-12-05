@@ -19,6 +19,17 @@ t_data          *allocate_basic_tools(int ac)
     return data;
 }
 
+int             length_of_arr(char **array)
+{
+    int res = 0;
+    while(array[res])
+    {
+        res++;
+    }
+    return res;
+}
+
+
 void          fill_solver_helper(t_data *data, int CurrentFile, int current_line, int counter, char buff)
 {
     char obstacle = data->obstacles[CurrentFile];
@@ -47,11 +58,13 @@ t_data          *FILES_read_data(int ac, char **av)
 
     while (av[Position_in_av])
     {
+        char *counting_lines = malloc(100);
         current_line = 0;
         counter = 0;
         file_name = av[Position_in_av];
         int file = open(file_name, O_RDONLY);
         int flag_to_allocate_memory = 0;
+        int flag_to_counting_lines = 0;
 
         if (file > 0)
         {
@@ -61,7 +74,7 @@ t_data          *FILES_read_data(int ac, char **av)
                 {
                     if (*buff == '\n')
                     {
-                        data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * data->count_of_data_lines[CurrentFile]);
+                        data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * 5000 + 1); // ну больше 5000 строк там вряд ли будет
                         data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile]);
 
                         data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
@@ -73,17 +86,26 @@ t_data          *FILES_read_data(int ac, char **av)
                     }
                     else
                     {
-                        switch (counter)
+                        if (FT_is_digit(*buff))
                         {
-                            case 0:
-                                data->count_of_data_lines[CurrentFile] = ft_atoi(buff);
-                            case 1:
-                                data->empty_cell[CurrentFile] = *buff;
-                            case 2:
-                                data->obstacles[CurrentFile] = *buff;
-                            case 3:
-                                data->symbols_to_solve[CurrentFile] = *buff;
+                            counting_lines[counter] = *buff;
+                            flag_to_counting_lines = 0;
                         }
+                        else if (flag_to_counting_lines == 1)
+                        {
+                            counting_lines[counter] = '\0';
+                            data->count_of_data_lines[CurrentFile] = ft_atoi(counting_lines);
+                            data->empty_cell[CurrentFile] = *buff;
+                        }
+                        else
+                        {
+                            switch (flag_to_counting_lines)
+                            {
+                                case 2: data->obstacles[CurrentFile] = *buff;
+                                case 3: data->symbols_to_solve[CurrentFile] = *buff;
+                            }
+                        }
+                        flag_to_counting_lines++;
                     }
                 }
                 else
@@ -105,6 +127,8 @@ t_data          *FILES_read_data(int ac, char **av)
                 counter++;
             }
         }
+        data->data_lines[CurrentFile][current_line] = NULL;
+        data->data_lines[CurrentFile] = (char **)realloc(data->data_lines[CurrentFile], length_of_arr(data->data_lines[CurrentFile])*sizeof(char *));
         Position_in_av++;
         CurrentFile++;
     }
