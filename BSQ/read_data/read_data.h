@@ -19,6 +19,7 @@ typedef struct              data_array
 
 {
     char                    ***data_lines;
+    int                     ***solve_helper;
     int                     *count_of_data_lines;
     char                    *obstacles;
     char                    *symbols_to_solve;
