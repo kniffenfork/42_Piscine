@@ -69,7 +69,6 @@ void              get_map_description(t_data *data, int CurrentFile, int Positio
 
 void             fill_solve_helper(t_data *data, int CurrentFile, int CurrentLine, int Position_in_av, char **av)
 {
-    int CountOfLines = data->count_of_data_lines[CurrentFile];
     int *solve_helper = (int *)malloc(sizeof(int) * 5000 + 1);
     int i = 0;
     while (av[Position_in_av][i])
@@ -88,7 +87,6 @@ t_data          *read_Data_From_CMDLine(char **av)
 {
     t_data *data = allocating_basic_tools(av);
 
-    int Position_in_av_I;
     int Position_in_av = 1;
     int CurrentFile = -1;
     int CurrentLine = 0;

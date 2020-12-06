@@ -8,6 +8,8 @@
 #define         INPUT_IS_ARGUMENTS_IN_CMDLINE   -201
 #define         INPUT_IS_FILES                  -202
 
+#define         DIFFERENCE_BETWEEN_MAP_AND_DATA -301
+
 #define         SUCCESS                          1
 
 
@@ -24,8 +26,6 @@ typedef struct              data_array
     char                    *obstacles;
     char                    *symbols_to_solve;
     char                    *empty_cell;
-
-
 }                           t_data;
 
 

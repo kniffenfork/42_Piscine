@@ -32,6 +32,7 @@ void          fill_solver_helper(t_data *data, int CurrentFile, int current_line
         data->solve_helper[CurrentFile][current_line][counter] = 1;
 }
 
+
 t_data          *FILES_read_data(int ac, char **av)
 {
     t_data *data = allocate_basic_tools(ac);
@@ -65,10 +66,10 @@ t_data          *FILES_read_data(int ac, char **av)
                     if (*buff == '\n')
                     {
                         data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * data->count_of_data_lines[CurrentFile] + 1);
-                        data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile]);
+                        data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile] + 1);
 
                         data->data_lines[CurrentFile][current_line] = (char *)malloc(5000 * sizeof(char)); // ну больше 5000 строк там вряд ли будет
-                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int));
+                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int) + 1);
 
                         flag_to_allocate_memory = 1;
                         counter = 0;
@@ -104,8 +105,8 @@ t_data          *FILES_read_data(int ac, char **av)
                     {
                         current_line++;
                         counter = 0;
-                        data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
-                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int));
+                        data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char) + 1);
+                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int) + 1);
                         continue;
                     }
                     else
@@ -118,7 +119,7 @@ t_data          *FILES_read_data(int ac, char **av)
             }
         }
         data->data_lines[CurrentFile][current_line] = NULL;
-        data->data_lines[CurrentFile][current_line] = (char *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(char));
+        data->data_lines[CurrentFile][current_line] = (char *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(char) + 1);
         Position_in_av++;
         close(file);
         CurrentFile++;
