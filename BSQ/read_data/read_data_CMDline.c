@@ -1,6 +1,6 @@
-#include "read_data.h"
+#include "./read_data.h"
 
-int                  CMD_count_of_the_maps(char **av)
+int                  count_of_the_maps(char **av)
 {
     int res = 0;
     int i = 1;
@@ -15,99 +15,105 @@ int                  CMD_count_of_the_maps(char **av)
     return res;
 }
 
-void                 CMD_deliver_obstacles_to_the_structure_with_allocating(t_data *data,
-                                                                            int count_of_lines,
-                                                                            char empty_cell,
-                                                                            char obstacle,
-                                                                            char symbol_to_solve)
+int                 av_i_is_map_description(int CurrentLine, char **av)
 {
-    data->empty_cell = (char *) malloc(2);
-    data->count_of_data_lines = (int *) malloc(sizeof(int) + 1);
-    data->obstacles = (char *) malloc(2);
-    data->symbols_to_solve = (char *) malloc(2);
+    if (FT_is_digit(av[CurrentLine][0]))
+        return 1;
 
-    data->empty_cell[0] = empty_cell;
-    data->empty_cell[1] = '\0';
+    return 0;
+}
 
-    data->count_of_data_lines[0] = count_of_lines;
+t_data              *allocating_basic_tools(char **av)
+{
+    int CountOfFiles = count_of_the_maps(av);
 
-    data->symbols_to_solve[0] = symbol_to_solve;
-    data->symbols_to_solve[1] = '\0';
+    t_data *data = (t_data *)malloc(sizeof(t_data));
 
-    data->obstacles[0] = obstacle;
-    data->obstacles[1] = '\0';
+    data->data_lines = (char ***)malloc(sizeof(char **) * CountOfFiles + 1);
+
+    data->solve_helper = (int ***)malloc(sizeof(int **) * CountOfFiles + 1);
+
+    data->count_of_data_lines = (int *)malloc(sizeof(int) * CountOfFiles + 1);
+
+    data->obstacles = (char *)malloc(CountOfFiles + 1);
+
+    data->empty_cell = (char *)malloc(CountOfFiles + 1);
+
+    data->symbols_to_solve = (char *)malloc(CountOfFiles + 1);
+
+    data->solve_helper = (int ***)malloc(sizeof(int **) * CountOfFiles + 1);
+
+    return data;
 }
 
 
-t_data               *CMD_get_map_description(int ac, char **av)
+void              get_map_description(t_data *data, int CurrentFile, int PositionInAv, char **av)
 {
-    t_data              *data_array = (t_data *) malloc(sizeof(t_data));
-    char                *counting_lines = (char *) malloc(100);
-    int                 count_of_lines;
-    char                empty_cell;
-    char                obstacle;
-    char                symbol_to_solve;
-    int                 i;
-    char                *map_description = av[1];
-
-    i = 0;
-    while (map_description[i])
+    char counting_the_lines_in_map[100];
+    int i = 0;
+    while (FT_is_digit(av[PositionInAv][i]))
     {
-        if (FT_is_digit(map_description[i]))
+        counting_the_lines_in_map[i] = av[PositionInAv][i];
+        i++;
+    }
+    counting_the_lines_in_map[i] = '\0';
+
+    int CountOfLinesInMAP = ft_atoi(counting_the_lines_in_map);
+
+    data->count_of_data_lines[CurrentFile] = CountOfLinesInMAP;
+
+    data->empty_cell[CurrentFile] = av[PositionInAv][i];
+    data->obstacles[CurrentFile] = av[PositionInAv][i + 1];
+    data->symbols_to_solve[CurrentFile] = av[PositionInAv][i + 2];
+}
+
+void             fill_solve_helper(t_data *data, int CurrentFile, int CurrentLine, int Position_in_av, char **av)
+{
+    int CountOfLines = data->count_of_data_lines[CurrentFile];
+    int *solve_helper = (int *)malloc(sizeof(int) * 5000 + 1);
+    int i = 0;
+    while (av[Position_in_av][i])
+    {
+        if (av[Position_in_av][i] == data->empty_cell[CurrentFile])
+            solve_helper[i] = 1;
+        else
+            solve_helper[i] = 0;
+        i++;
+    }
+    solve_helper = (int *)realloc(solve_helper, sizeof(int) * i + 1);
+    data->solve_helper[CurrentFile][CurrentLine] = solve_helper;
+}
+
+t_data          *read_Data_From_CMDLine(char **av)
+{
+    t_data *data = allocating_basic_tools(av);
+
+    int Position_in_av_I;
+    int Position_in_av = 1;
+    int CurrentFile = -1;
+    int CurrentLine = 0;
+
+    while (av[Position_in_av])
+    {
+        if (av_i_is_map_description(Position_in_av, av))
         {
-            counting_lines[i] = map_description[i];
-            i++;
+            CurrentFile++;
+            CurrentLine = 0;
+            get_map_description(data, CurrentFile, Position_in_av, av);
+            data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * data->count_of_data_lines[CurrentFile] + 1);
+            data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile] + 1);
         }
         else
-            break;
+        {
+            data->data_lines[CurrentFile][CurrentLine] = av[Position_in_av];
+            fill_solve_helper(data, CurrentFile, CurrentLine, Position_in_av, av);
+            CurrentLine++;
+
+        }
+        Position_in_av++;
     }
-
-    counting_lines[i] = '\0';
-
-    count_of_lines = ft_atoi(counting_lines);
-    empty_cell = map_description[i];
-    obstacle = map_description[i + 1];
-    symbol_to_solve = map_description[i + 2];
-
-    CMD_deliver_obstacles_to_the_structure_with_allocating(data_array, count_of_lines, empty_cell, obstacle, symbol_to_solve);
-
-    free(counting_lines);
-
-    return data_array;
+    data->data_lines[CurrentFile + 1] = NULL;
+    data->solve_helper[CurrentFile + 1] = NULL;
+    return data;
 }
 
-
-
-t_data              *CMD_allocate_memory_for_DataStructure(int ac, char **av)
-{
-    t_data *data_array = CMD_get_map_description(ac, av);
-
-    data_array->data_lines = (char ***)malloc(sizeof(char **));
-    data_array->data_lines[0] = (char **)malloc(sizeof(char *) * data_array->count_of_data_lines[0] + 1);
-
-    int i = 0;
-    while (i < data_array->count_of_data_lines[0])
-    {
-        data_array->data_lines[0][i] = (char *)malloc( data_array->count_of_data_lines[0] + 1);
-        i++;
-    }
-
-    return data_array;
-}
-
-
-t_data              *CMD_read_data(int ac, char **av)
-{
-    t_data *data_array = CMD_allocate_memory_for_DataStructure(ac, av);
-
-    int i = 2;
-    int j = 0;
-    while (av[i])
-    {
-        data_array->data_lines[0][j] = av[i];
-        i++;
-        j++;
-    }
-    data_array->data_lines[0][i] = NULL;
-    return data_array;
-}
