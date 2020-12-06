@@ -34,18 +34,24 @@ typedef struct              data_array
 
 // usable functions:
 int                 define_type_of_input(int ac, char **av);
+void                get_map_description(t_data *data, int CurrentFile, int PositionInAv, char **av);
+void                fill_solve_helper(t_data *data, int CurrentFile, int CurrentLine, int Position_in_av, char **av);
 
 // read data from files
 t_data              *FILES_read_data(int ac, char **av);
 
+// read data from CMD line
+t_data              *read_Data_From_CMDLine(int ac, char **av);
+
 // creating data array
 t_data              *create_data_array(int ac, char **av);
-void           Print_Data(t_data *data, int CurrentFile);
+void                Print_Data(t_data *data, int CurrentFile);
 
-t_data              *read_Data_From_CMDLine(char **av);
-void                get_map_description(t_data *data, int CurrentFile, int PositionInAn, char **av);
-void                fill_solve_helper(t_data *data, int CurrentFile, int CurrentLine, int Position_in_av, char **av);
 
-int           CountOfFiles(int ac, char **av);
-void            check_that_all_lines_have_the_same_length(t_data *data, int ac, char **av);
+// error tracking
+int                 CountOfFiles(int ac, char **av);
+void                check_for_difference_between_symbol_and_map_definition(t_data *data, int CurrentFile, char *buff);
+void                check_that_all_lines_have_the_same_length(t_data *data, int ac, char **av);
+void                CMD_check_that_symbols_in_line_are_correct(t_data *data, int CurrentFile, int CurrentLine);
+void                CMD_check_for_errors(t_data *data, int ac, char **av);
 #endif //LEARN_C_READ_DATA_H

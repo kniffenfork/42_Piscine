@@ -35,44 +35,6 @@ void          fill_solver_helper(t_data *data, int CurrentFile, int current_line
         data->solve_helper[CurrentFile][current_line][counter] = 1;
 }
 
-void            check_for_difference_between_symbol_and_map_definition(t_data *data, int CurrentFile, char *buff)
-{
-    char empty_cell = data->empty_cell[CurrentFile];
-    char obstacle = data->obstacles[CurrentFile];
-
-    if ((*buff == empty_cell || *buff == obstacle) && (data->ERROR_TRACKING[CurrentFile] >= 0))
-    {
-        data->ERROR_TRACKING[CurrentFile] = SUCCESS;
-    }
-    else
-        data->ERROR_TRACKING[CurrentFile] = DIFFERENCE_BETWEEN_MAP_AND_DATA;
-}
-
-void            check_that_all_lines_have_the_same_length(t_data *data, int ac, char **av)
-{
-    int CountOfFILES = CountOfFiles(ac, av);
-    int CurrentFile;
-    int CurrentLine;
-    int num1;
-    int num2;
-    for (CurrentFile = 0; CurrentFile < CountOfFILES; CurrentFile++)
-    {
-        if (data->length_of_the_lines[CurrentFile])
-        {
-            num1 = data->length_of_the_lines[CurrentFile][0];
-            for (CurrentLine = 1; CurrentLine < data->count_of_data_lines[CurrentFile]; CurrentLine++)
-            {
-                num2 = data->length_of_the_lines[CurrentFile][CurrentLine];
-                if (num1 != num2)
-                {
-                    data->ERROR_TRACKING[CurrentFile] = NOT_ALL_LINES_WITH_SAME_LEN;
-                    break;
-                }
-            }
-        }
-    }
-}
-
 t_data          *FILES_read_data(int ac, char **av)
 {
     t_data *data = allocate_basic_tools(ac);

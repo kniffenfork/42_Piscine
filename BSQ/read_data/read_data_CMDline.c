@@ -39,9 +39,13 @@ t_data              *allocating_basic_tools(char **av)
 
     data->empty_cell = (char *)malloc(CountOfFiles + 1);
 
+    data->ERROR_TRACKING = (int *)malloc(sizeof(int) * CountOfFiles + 1);
+
     data->symbols_to_solve = (char *)malloc(CountOfFiles + 1);
 
     data->solve_helper = (int ***)malloc(sizeof(int **) * CountOfFiles + 1);
+
+    data->length_of_the_lines = (int **)malloc(sizeof(int *) * CountOfFiles + 1);
 
     return data;
 }
@@ -83,7 +87,7 @@ void             fill_solve_helper(t_data *data, int CurrentFile, int CurrentLin
     data->solve_helper[CurrentFile][CurrentLine] = solve_helper;
 }
 
-t_data          *read_Data_From_CMDLine(char **av)
+t_data          *read_Data_From_CMDLine(int ac, char **av)
 {
     t_data *data = allocating_basic_tools(av);
 
@@ -112,6 +116,7 @@ t_data          *read_Data_From_CMDLine(char **av)
     }
     data->data_lines[CurrentFile + 1] = NULL;
     data->solve_helper[CurrentFile + 1] = NULL;
+    CMD_check_for_errors(data, ac, av);
     return data;
 }
 

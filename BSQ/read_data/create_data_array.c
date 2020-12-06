@@ -15,7 +15,7 @@ t_data          *create_data_array(int ac, char **av)
     if (define_type_of_input(ac, av) == INPUT_IS_FILES)
         return FILES_read_data(ac, av);
     else
-        return read_Data_From_CMDLine(av);
+        return read_Data_From_CMDLine(ac, av);
 }
 
 void           Print_Data(t_data *data, int CurrentFile)
