@@ -1,8 +1,25 @@
 #include "read_data.h"
 
+int                  CMD_count_of_the_maps(char **av)
+{
+    int res = 0;
+    int i = 1;
+    while (av[i])
+    {
+        if (FT_is_digit(av[i][0]))
+        {
+            res++;
+        }
+        i++;
+    }
+    return res;
+}
 
-void                 CMD_deliver_obstacles_to_the_structure_with_allocating(t_data *data, int count_of_lines, char empty_cell,
-                                                                            char obstacle, char symbol_to_solve)
+void                 CMD_deliver_obstacles_to_the_structure_with_allocating(t_data *data,
+                                                                            int count_of_lines,
+                                                                            char empty_cell,
+                                                                            char obstacle,
+                                                                            char symbol_to_solve)
 {
     data->empty_cell = (char *) malloc(2);
     data->count_of_data_lines = (int *) malloc(sizeof(int) + 1);
