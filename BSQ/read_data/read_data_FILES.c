@@ -19,21 +19,10 @@ t_data          *allocate_basic_tools(int ac)
     return data;
 }
 
-int             length_of_arr(char **array)
-{
-    int res = 0;
-    while(array[res])
-    {
-        res++;
-    }
-    return res;
-}
-
 
 void          fill_solver_helper(t_data *data, int CurrentFile, int current_line, int counter, char buff)
 {
     char obstacle = data->obstacles[CurrentFile];
-    char empty_cell = data->empty_cell[CurrentFile];
 
     if (buff == obstacle)
     {
@@ -51,6 +40,7 @@ t_data          *FILES_read_data(int ac, char **av)
     int CurrentFile = 0;
     int current_line;
     int counter;
+    int length_of_current_line;
 
     char *file_name;
     char buff[1];
@@ -74,10 +64,10 @@ t_data          *FILES_read_data(int ac, char **av)
                 {
                     if (*buff == '\n')
                     {
-                        data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * 5000 + 1); // ну больше 5000 строк там вряд ли будет
+                        data->data_lines[CurrentFile] = (char **)malloc(sizeof(char *) * data->count_of_data_lines[CurrentFile] + 1);
                         data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile]);
 
-                        data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char));
+                        data->data_lines[CurrentFile][current_line] = (char *)malloc(5000 * sizeof(char)); // ну больше 5000 строк там вряд ли будет
                         data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int));
 
                         flag_to_allocate_memory = 1;
@@ -128,8 +118,9 @@ t_data          *FILES_read_data(int ac, char **av)
             }
         }
         data->data_lines[CurrentFile][current_line] = NULL;
-        data->data_lines[CurrentFile] = (char **)realloc(data->data_lines[CurrentFile], length_of_arr(data->data_lines[CurrentFile])*sizeof(char *));
+        data->data_lines[CurrentFile][current_line] = (char *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(char));
         Position_in_av++;
+        close(file);
         CurrentFile++;
     }
     data->data_lines[CurrentFile] = NULL;

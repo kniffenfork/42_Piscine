@@ -99,8 +99,6 @@ t_data          *BSQ_solve(int ac, char **av)
     t_data *data = create_data_array(ac, av);
 
     int CurrentFile = 0;
-    int current_line = 0;
-    int position_in_line = 0;
 
     while (data->data_lines[CurrentFile])
     {
