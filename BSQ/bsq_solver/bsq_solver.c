@@ -94,16 +94,27 @@ void            replace_to_solve(t_data *data, int CurrentFile)
     }
 }
 
-t_data          *BSQ_solve(int ac, char **av)
+
+void          BSQ_solve(int ac, char **av)
 {
     t_data *data = create_data_array(ac, av);
 
     int CurrentFile = 0;
+    int CountOFFILES = CountOfFiles(ac, av);
 
-    while (data->data_lines[CurrentFile])
+    while (CurrentFile < CountOFFILES)
     {
-        replace_to_solve(data, CurrentFile);
+        if (data->ERROR_TRACKING[CurrentFile] == SUCCESS)
+        {
+            replace_to_solve(data, CurrentFile);
+            Print_Data(data, CurrentFile);
+        }
+        else if (data->ERROR_TRACKING[CurrentFile] == DIFFERENCE_BETWEEN_MAP_AND_DATA || data->ERROR_TRACKING[CurrentFile] == NOT_ALL_LINES_WITH_SAME_LEN)
+        {
+            ft_putstr("MAP ERROR");
+        }
+        if (CurrentFile < (CountOFFILES - 1))
+            ft_putchar('\n');
         CurrentFile++;
     }
-    return data;
 }

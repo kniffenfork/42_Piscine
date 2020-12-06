@@ -18,18 +18,12 @@ t_data          *create_data_array(int ac, char **av)
         return read_Data_From_CMDLine(av);
 }
 
-void           Print_Data(t_data *data)
+void           Print_Data(t_data *data, int CurrentFile)
 {
-    int CountOfFiles = Count_of_FILES(data);
-
-    for (int i = 0; i < CountOfFiles; i++)
+    for (int j = 0; j < data->count_of_data_lines[CurrentFile]; j++)
     {
-        for (int j = 0; j < data->count_of_data_lines[i]; j++)
-        {
-            ft_putstr(data->data_lines[i][j]);
-            ft_putchar('\n');
-        }
-        ft_putstr("The next File:");
+        ft_putstr(data->data_lines[CurrentFile][j]);
         ft_putchar('\n');
     }
 }
+

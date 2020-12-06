@@ -12,13 +12,16 @@ t_data          *allocate_basic_tools(int ac)
 
     data->count_of_data_lines = (int *)malloc(sizeof(int) * count_of_files);
 
+    data->ERROR_TRACKING = (int *)malloc(sizeof(int) * count_of_files + 1);
+
+    data->length_of_the_lines = (int **)malloc(sizeof(int *) * count_of_files + 1);
+
     data->obstacles = (char *)malloc(count_of_files + 1);
     data->symbols_to_solve = (char *)malloc(count_of_files + 1);
     data->empty_cell = (char *)malloc(count_of_files + 1);
 
     return data;
 }
-
 
 void          fill_solver_helper(t_data *data, int CurrentFile, int current_line, int counter, char buff)
 {
@@ -32,6 +35,43 @@ void          fill_solver_helper(t_data *data, int CurrentFile, int current_line
         data->solve_helper[CurrentFile][current_line][counter] = 1;
 }
 
+void            check_for_difference_between_symbol_and_map_definition(t_data *data, int CurrentFile, char *buff)
+{
+    char empty_cell = data->empty_cell[CurrentFile];
+    char obstacle = data->obstacles[CurrentFile];
+
+    if ((*buff == empty_cell || *buff == obstacle) && (data->ERROR_TRACKING[CurrentFile] >= 0))
+    {
+        data->ERROR_TRACKING[CurrentFile] = SUCCESS;
+    }
+    else
+        data->ERROR_TRACKING[CurrentFile] = DIFFERENCE_BETWEEN_MAP_AND_DATA;
+}
+
+void            check_that_all_lines_have_the_same_length(t_data *data, int ac, char **av)
+{
+    int CountOfFILES = CountOfFiles(ac, av);
+    int CurrentFile;
+    int CurrentLine;
+    int num1;
+    int num2;
+    for (CurrentFile = 0; CurrentFile < CountOfFILES; CurrentFile++)
+    {
+        if (data->length_of_the_lines[CurrentFile])
+        {
+            num1 = data->length_of_the_lines[CurrentFile][0];
+            for (CurrentLine = 1; CurrentLine < data->count_of_data_lines[CurrentFile]; CurrentLine++)
+            {
+                num2 = data->length_of_the_lines[CurrentFile][CurrentLine];
+                if (num1 != num2)
+                {
+                    data->ERROR_TRACKING[CurrentFile] = NOT_ALL_LINES_WITH_SAME_LEN;
+                    break;
+                }
+            }
+        }
+    }
+}
 
 t_data          *FILES_read_data(int ac, char **av)
 {
@@ -69,7 +109,8 @@ t_data          *FILES_read_data(int ac, char **av)
                         data->solve_helper[CurrentFile] = (int **)malloc(sizeof(int *) * data->count_of_data_lines[CurrentFile] + 1);
 
                         data->data_lines[CurrentFile][current_line] = (char *)malloc(5000 * sizeof(char)); // ну больше 5000 строк там вряд ли будет
-                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int) + 1);
+                        data->solve_helper[CurrentFile][current_line] = (int *)malloc(5000 * sizeof(int));
+                        data->length_of_the_lines[CurrentFile] = (int *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(int) + 1);
 
                         flag_to_allocate_memory = 1;
                         counter = 0;
@@ -103,6 +144,7 @@ t_data          *FILES_read_data(int ac, char **av)
                 {
                     if (*buff == '\n')
                     {
+                        data->length_of_the_lines[CurrentFile][current_line] = counter;
                         current_line++;
                         counter = 0;
                         data->data_lines[CurrentFile][current_line] = (char *)malloc(data->count_of_data_lines[CurrentFile] * sizeof(char) + 1);
@@ -111,19 +153,23 @@ t_data          *FILES_read_data(int ac, char **av)
                     }
                     else
                     {
+                        check_for_difference_between_symbol_and_map_definition(data, CurrentFile, buff);
                         data->data_lines[CurrentFile][current_line][counter] = *buff;
                         fill_solver_helper(data, CurrentFile, current_line, counter, *buff);
                     }
                 }
                 counter++;
             }
+            data->data_lines[CurrentFile][current_line] = NULL;
+            data->solve_helper[CurrentFile][current_line] = NULL;
+            data->data_lines[CurrentFile][current_line] = (char *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(char) + 1);
+            data->solve_helper[CurrentFile][current_line] = (int *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(int) + 1);
+            close(file);
         }
-        data->data_lines[CurrentFile][current_line] = NULL;
-        data->data_lines[CurrentFile][current_line] = (char *)realloc(data->data_lines[CurrentFile][current_line], length_of_current_line * sizeof(char) + 1);
-        Position_in_av++;
-        close(file);
         CurrentFile++;
+        Position_in_av++;
     }
     data->data_lines[CurrentFile] = NULL;
+    check_that_all_lines_have_the_same_length(data, ac, av);
     return data;
 }
