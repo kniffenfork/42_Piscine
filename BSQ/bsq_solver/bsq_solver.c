@@ -79,7 +79,7 @@ void            replace_to_solve(t_data *data, int CurrentFile)
     int position_in_line;
     int count_of_lines = data->count_of_data_lines[CurrentFile];
 
-    for (num_of_line = 1; num_of_line < count_of_lines; num_of_line++)
+    for (num_of_line = 0; num_of_line < count_of_lines; num_of_line++)
     {
         for (position_in_line = 0; position_in_line < count_of_lines; position_in_line++)
         {
