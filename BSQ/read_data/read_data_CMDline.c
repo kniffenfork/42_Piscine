@@ -26,25 +26,16 @@ int                 av_i_is_map_description(int CurrentLine, char **av)
 t_data              *allocating_basic_tools(char **av)
 {
     int CountOfFiles = count_of_the_maps(av);
-
     t_data *data = (t_data *)malloc(sizeof(t_data));
 
     data->data_lines = (char ***)malloc(sizeof(char **) * CountOfFiles + 1);
-
     data->solve_helper = (int ***)malloc(sizeof(int **) * CountOfFiles + 1);
-
     data->count_of_data_lines = (int *)malloc(sizeof(int) * CountOfFiles + 1);
-
     data->obstacles = (char *)malloc(CountOfFiles + 1);
-
     data->empty_cell = (char *)malloc(CountOfFiles + 1);
-
     data->ERROR_TRACKING = (int *)malloc(sizeof(int) * CountOfFiles + 1);
-
     data->symbols_to_solve = (char *)malloc(CountOfFiles + 1);
-
     data->solve_helper = (int ***)malloc(sizeof(int **) * CountOfFiles + 1);
-
     data->length_of_the_lines = (int **)malloc(sizeof(int *) * CountOfFiles + 1);
 
     return data;

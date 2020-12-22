@@ -112,6 +112,9 @@ void          BSQ_solve(int ac, char **av)
         else if (data->ERROR_TRACKING[CurrentFile] == DIFFERENCE_BETWEEN_MAP_AND_DATA || data->ERROR_TRACKING[CurrentFile] == NOT_ALL_LINES_WITH_SAME_LEN)
         {
             ft_putstr("MAP ERROR");
+            ft_putnbr(data->ERROR_TRACKING[CurrentFile]);
+            ft_putchar(' ');
+            ft_putnbr(define_type_of_input(ac, av));
         }
         if (CurrentFile < (CountOFFILES - 1))
             ft_putchar('\n');

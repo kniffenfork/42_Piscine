@@ -82,8 +82,8 @@ void            CMD_check_for_errors(t_data *data, int ac, char **av)
             num2 = ft_strlen(data->data_lines[CurrentFile][CurrentLine]);
             if (num1 != num2)
             {
-                data->ERROR_TRACKING[CurrentFile] = NOT_ALL_LINES_WITH_SAME_LEN;
-                break;
+                //data->ERROR_TRACKING[CurrentFile] = NOT_ALL_LINES_WITH_SAME_LEN;
+                //break;
             }
             CMD_check_that_symbols_in_line_are_correct(data, CurrentFile, CurrentLine);
         }

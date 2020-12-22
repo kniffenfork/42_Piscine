@@ -3,19 +3,12 @@
 t_data          *allocate_basic_tools(int ac)
 {
     int count_of_files = (ac - 1);
-
     t_data *data = (t_data *)malloc(sizeof(t_data));
-
     data->data_lines = (char ***)malloc(sizeof(char **) * count_of_files + 1);
-
     data->solve_helper = (int ***)malloc(sizeof(int **) * count_of_files + 1);
-
     data->count_of_data_lines = (int *)malloc(sizeof(int) * count_of_files);
-
     data->ERROR_TRACKING = (int *)malloc(sizeof(int) * count_of_files + 1);
-
     data->length_of_the_lines = (int **)malloc(sizeof(int *) * count_of_files + 1);
-
     data->obstacles = (char *)malloc(count_of_files + 1);
     data->symbols_to_solve = (char *)malloc(count_of_files + 1);
     data->empty_cell = (char *)malloc(count_of_files + 1);
